@@ -310,12 +310,17 @@
       border-radius:10px;padding:8px 12px;margin:0 0 14px;
     }
     .featured .pkg-exclude{color:#f0c8c8;background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.15)}
-    .pkg-price{display:flex;align-items:baseline;gap:10px;margin-top:auto;padding-top:10px;border-top:1px solid var(--line)}
-    .featured .pkg-price{border-top-color:rgba(255,255,255,.15)}
-    .price-label{font-size:.78rem;color:var(--muted);font-weight:700}
-    .featured .price-label{color:#c5d1d0}
-    .price-value{font-size:1.55rem;font-weight:800;color:var(--green-dark);letter-spacing:-.02em}
-    .featured .price-value{color:var(--green)}
+    .pkg-price-note{
+      margin-top:auto;padding:12px 14px;
+      background:#f7f8f5;border:1px dashed var(--line);
+      border-radius:12px;font-size:.85rem;font-weight:700;
+      color:var(--ink);line-height:1.5;
+    }
+    .featured .pkg-price-note{
+      background:rgba(255,255,255,.06);
+      border-color:rgba(255,255,255,.22);
+      color:#eef4ee;
+    }
     .package .btn{margin-top:14px}
     .package .btn-light{background:transparent;border-color:#50646a;color:white}
     .package .btn-light:hover{border-color:var(--green)}
@@ -736,7 +741,7 @@
         <div class="section-head">
           <span class="eyebrow" data-i18n="packagesEyebrow">باقات خدماتنا</span>
           <h2 data-i18n="packagesTitle">ثلاث باقات لدورة اللغة الألمانية والتأشيرة.</h2>
-          <p data-i18n="packagesIntro">جميع الباقات مخصصة لمسار دورة اللغة الألمانية. اختر ما يناسب وضعك، ويمكنك دائماً طلب استشارة إن لم تكن متأكداً.</p>
+          <p data-i18n="packagesIntro">جميع الباقات مخصصة لمسار دورة اللغة الألمانية. اختر ما يناسب وضعك — السعر يُبلَّغ بعد التواصل معنا عبر واتساب وإرسال الاستمارة.</p>
         </div>
 
         <div class="packages-grid">
@@ -752,11 +757,8 @@
               <li data-i18n="p1d">قائمة الوثائق والإرشاد في تجهيز الملف</li>
             </ul>
             <div class="pkg-exclude" data-i18n="p1x">غير مشمول: البحث عن السكن أو Ausbildung.</div>
-            <div class="pkg-price">
-              <span class="price-label" data-i18n="priceLabel">رسوم الخدمة</span>
-              <span class="price-value">450 €</span>
-            </div>
-            <a class="btn btn-light" href="https://wa.me/213795369006?text=أرغب%20في%20اختيار%20الباقة%201%20—%20دورة%20اللغة%20%2B%20التأشيرة%20(450%20€)." target="_blank" rel="noopener" data-i18n="p1Cta">أختار الباقة 1 ↗</a>
+            <div class="pkg-price-note" data-i18n="priceHidden">💰 السعر يُبلَّغ بعد التواصل معنا عبر واتساب وإرسال الاستمارة.</div>
+            <a class="btn btn-light" href="https://wa.me/213795369006?text=أرغب%20في%20اختيار%20الباقة%201%20—%20دورة%20اللغة%20%2B%20التأشيرة." target="_blank" rel="noopener" data-i18n="p1Cta">أختار الباقة 1 ↗</a>
           </article>
 
           <!-- Package 2 (featured) -->
@@ -770,11 +772,8 @@
               <li data-i18n="p2c">متابعة ملف السكن مع الجهات المعنية</li>
             </ul>
             <div class="pkg-exclude" data-i18n="p2x">غير مشمول: البحث عن Ausbildung.</div>
-            <div class="pkg-price">
-              <span class="price-label" data-i18n="priceLabel">رسوم الخدمة</span>
-              <span class="price-value">750 €</span>
-            </div>
-            <a class="btn btn-light" href="https://wa.me/213795369006?text=أرغب%20في%20اختيار%20الباقة%202%20—%20دورة%20اللغة%20%2B%20السكن%20%2B%20التأشيرة%20(750%20€)." target="_blank" rel="noopener" data-i18n="p2Cta">أختار الباقة 2 ↗</a>
+            <div class="pkg-price-note" data-i18n="priceHidden">💰 السعر يُبلَّغ بعد التواصل معنا عبر واتساب وإرسال الاستمارة.</div>
+            <a class="btn btn-light" href="https://wa.me/213795369006?text=أرغب%20في%20اختيار%20الباقة%202%20—%20دورة%20اللغة%20%2B%20السكن%20%2B%20التأشيرة." target="_blank" rel="noopener" data-i18n="p2Cta">أختار الباقة 2 ↗</a>
           </article>
 
           <!-- Package 3 -->
@@ -787,11 +786,8 @@
               <li data-i18n="p3b">البحث عن فرص Ausbildung</li>
               <li data-i18n="p3c">الإرشاد والمساعدة في التقديم على Ausbildung</li>
             </ul>
-            <div class="pkg-price">
-              <span class="price-label" data-i18n="priceLabel">رسوم الخدمة</span>
-              <span class="price-value">1,150 €</span>
-            </div>
-            <a class="btn btn-light" href="https://wa.me/213795369006?text=أرغب%20في%20اختيار%20الباقة%203%20—%20دورة%20اللغة%20%2B%20السكن%20%2B%20Ausbildung%20%2B%20التأشيرة%20(1,150%20€)." target="_blank" rel="noopener" data-i18n="p3Cta">أختار الباقة 3 ↗</a>
+            <div class="pkg-price-note" data-i18n="priceHidden">💰 السعر يُبلَّغ بعد التواصل معنا عبر واتساب وإرسال الاستمارة.</div>
+            <a class="btn btn-light" href="https://wa.me/213795369006?text=أرغب%20في%20اختيار%20الباقة%203%20—%20دورة%20اللغة%20%2B%20السكن%20%2B%20Ausbildung%20%2B%20التأشيرة." target="_blank" rel="noopener" data-i18n="p3Cta">أختار الباقة 3 ↗</a>
           </article>
         </div>
 
@@ -863,7 +859,7 @@
           <details><summary><span data-i18n="faq0bQ">هل أحتاج معرفة مسبقة بالألمانية؟</span><span class="plus" aria-hidden="true">+</span></summary><p data-i18n="faq0bA">لا. نبدأ معك من الصفر تماماً — لا تحتاج إلى أي معرفة سابقة باللغة الألمانية قبل أن تبدأ معنا.</p></details>
           <details><summary><span data-i18n="faq1Q">هل تضمنون الحصول على التأشيرة أو القبول؟</span><span class="plus" aria-hidden="true">+</span></summary><p data-i18n="faq1A">لا. القرار النهائي يعود إلى الجهات الرسمية والمؤسسات المعنية. نقدم إرشاداً ومساعدة تنظيمية، ولا نضمن التأشيرة أو القبول أو الحصول على عقد.</p></details>
           <details><summary><span data-i18n="faq2Q">هل يمكنكم إيجاد سكن أو عقد Ausbildung بشكل مضمون؟</span><span class="plus" aria-hidden="true">+</span></summary><p data-i18n="faq2A">نساعد في البحث والتحضير والتواصل وفق نطاق الخدمة، لكن توفر السكن أو فرص التكوين يعتمد على الجهات الخارجية وشروط كل حالة.</p></details>
-          <details><summary><span data-i18n="faq3Q">كيف أعرف الأسعار وما تتضمنه كل باقة؟</span><span class="plus" aria-hidden="true">+</span></summary><p data-i18n="faq3A">الأسعار مذكورة أعلاه لكل باقة. إذا لم تكن متأكداً من الباقة المناسبة، راسلنا وسنوجهك.</p></details>
+          <details><summary><span data-i18n="faq3Q">كيف أعرف الأسعار وما تتضمنه كل باقة؟</span><span class="plus" aria-hidden="true">+</span></summary><p data-i18n="faq3A">السعر يُبلَّغ بعد التواصل معنا عبر واتساب وإرسال الاستمارة. راسلنا وسنوضح لك التفاصيل ونوجهك للباقة المناسبة.</p></details>
           <details><summary><span data-i18n="faq4Q">هل يجب أن أتحدث الألمانية مسبقاً؟</span><span class="plus" aria-hidden="true">+</span></summary><p data-i18n="faq4A">لا. يمكنك البدء من الصفر معنا في دورة اللغة الأونلاين. أما بالنسبة للدراسة أو Ausbildung، فإن متطلبات اللغة تختلف حسب المسار والمؤسسة، ويمكننا مساعدتك على فهمها.</p></details>
           <details><summary><span data-i18n="faq5Q">هل تقدمون خدمات لغير الجزائريين؟</span><span class="plus" aria-hidden="true">+</span></summary><p data-i18n="faq5A">تركيزنا الأساسي على الطلبة والخريجين الجزائريين. إذا كنت من بلد آخر، راسلنا وسنوضح إن كان بإمكاننا المساعدة أو توجيهك.</p></details>
           <details><summary><span data-i18n="faq6Q">كيف تتم عملية الدفع؟</span><span class="plus" aria-hidden="true">+</span></summary><p data-i18n="faq6A">تُوضح طريقة الدفع وتفاصيلها عند تأكيد الباقة ونطاق الخدمة. لا نطلب أي دفعة قبل الاتفاق الواضح على ما سيُقدَّم.</p></details>
@@ -954,7 +950,7 @@
         aboutNote:"نقطة التواصل: <strong>السيد زردازي.ا</strong> — يمكنك مراسلته مباشرة عبر واتساب لمعرفة ما إذا كانت خدماتنا مناسبة لحالتك.",
         packagesEyebrow:"باقات خدماتنا",
         packagesTitle:"ثلاث باقات لدورة اللغة الألمانية والتأشيرة.",
-        packagesIntro:"جميع الباقات مخصصة لمسار دورة اللغة الألمانية. اختر ما يناسب وضعك، ويمكنك دائماً طلب استشارة إن لم تكن متأكداً.",
+        packagesIntro:"جميع الباقات مخصصة لمسار دورة اللغة الألمانية. اختر ما يناسب وضعك — السعر يُبلَّغ بعد التواصل معنا عبر واتساب وإرسال الاستمارة.",
         p1Tag:"الباقة 01",
         p1Title:"دورة اللغة + المساعدة في التأشيرة",
         p1Desc:"لمن يريد إتمام التسجيل في دورة لغة والتحضير لملف التأشيرة.",
@@ -979,7 +975,7 @@
         p3b:"البحث عن فرص Ausbildung",
         p3c:"الإرشاد والمساعدة في التقديم على Ausbildung",
         p3Cta:"أختار الباقة 3 ↗",
-        priceLabel:"رسوم الخدمة",
+        priceHidden:"💰 السعر يُبلَّغ بعد التواصل معنا عبر واتساب وإرسال الاستمارة.",
         pkgAdviceText:"لست متأكداً من الباقة المناسبة؟",
         pkgAdviceCta:"اطلب استشارة ↗",
         discTitle:"مهم | رسوم خدماتنا لا تشمل التكاليف الرسمية أو تكاليف جهات خارجية.",
@@ -1010,7 +1006,7 @@
         faq0bA:"لا. نبدأ معك من الصفر تماماً — لا تحتاج إلى أي معرفة سابقة باللغة الألمانية قبل أن تبدأ معنا.",
         faq1Q:"هل تضمنون الحصول على التأشيرة أو القبول؟",faq1A:"لا. القرار النهائي يعود إلى الجهات الرسمية والمؤسسات المعنية. نقدم إرشاداً ومساعدة تنظيمية، ولا نضمن التأشيرة أو القبول أو الحصول على عقد.",
         faq2Q:"هل يمكنكم إيجاد سكن أو عقد Ausbildung بشكل مضمون؟",faq2A:"نساعد في البحث والتحضير والتواصل وفق نطاق الخدمة، لكن توفر السكن أو فرص التكوين يعتمد على الجهات الخارجية وشروط كل حالة.",
-        faq3Q:"كيف أعرف الأسعار وما تتضمنه كل باقة؟",faq3A:"الأسعار مذكورة أعلاه لكل باقة. إذا لم تكن متأكداً من الباقة المناسبة، راسلنا وسنوجهك.",
+        faq3Q:"كيف أعرف الأسعار وما تتضمنه كل باقة؟",faq3A:"السعر يُبلَّغ بعد التواصل معنا عبر واتساب وإرسال الاستمارة. راسلنا وسنوضح لك التفاصيل ونوجهك للباقة المناسبة.",
         faq4Q:"هل يجب أن أتحدث الألمانية مسبقاً؟",faq4A:"لا. يمكنك البدء من الصفر معنا في دورة اللغة الأونلاين. أما بالنسبة للدراسة أو Ausbildung، فإن متطلبات اللغة تختلف حسب المسار والمؤسسة، ويمكننا مساعدتك على فهمها.",
         faq5Q:"هل تقدمون خدمات لغير الجزائريين؟",faq5A:"تركيزنا الأساسي على الطلبة والخريجين الجزائريين. إذا كنت من بلد آخر، راسلنا وسنوضح إن كان بإمكاننا المساعدة أو توجيهك.",
         faq6Q:"كيف تتم عملية الدفع؟",faq6A:"تُوضح طريقة الدفع وتفاصيلها عند تأكيد الباقة ونطاق الخدمة. لا نطلب أي دفعة قبل الاتفاق الواضح على ما سيُقدَّم.",
@@ -1071,7 +1067,7 @@
         aboutNote:"Point de contact : <strong>M. Zerdazi A.</strong> — contactez-le directement sur WhatsApp pour savoir si nos services correspondent à votre situation.",
         packagesEyebrow:"Nos formules",
         packagesTitle:"Trois formules pour le cours d’allemand et le visa.",
-        packagesIntro:"Toutes les formules concernent le parcours « cours d’allemand ». Choisissez celle qui correspond à votre situation, ou demandez un conseil.",
+        packagesIntro:"Toutes les formules concernent le parcours « cours d’allemand ». Choisissez celle qui correspond à votre situation — le tarif est communiqué après votre prise de contact via WhatsApp et l’envoi du formulaire.",
         p1Tag:"Formule 01",
         p1Title:"Cours d’allemand + assistance visa",
         p1Desc:"Pour finaliser l’inscription à un cours d’allemand et préparer le dossier de visa.",
@@ -1096,7 +1092,7 @@
         p3b:"Recherche d’opportunités d’Ausbildung",
         p3c:"Conseil et aide pour les candidatures Ausbildung",
         p3Cta:"Je choisis la formule 3 ↗",
-        priceLabel:"Frais de service",
+        priceHidden:"💰 Le tarif est communiqué après vous être mis en contact via WhatsApp et avoir envoyé le formulaire.",
         pkgAdviceText:"Vous hésitez entre les formules ?",
         pkgAdviceCta:"Demander un conseil ↗",
         discTitle:"Important | Nos frais de service n’incluent pas les frais officiels ni ceux de tiers.",
@@ -1127,7 +1123,7 @@
         faq0bA:"Non. Nous commençons avec vous depuis zéro — aucune connaissance préalable de l’allemand n’est nécessaire.",
         faq1Q:"Garantissez-vous l’obtention du visa ou de l’admission ?",faq1A:"Non. La décision finale appartient aux autorités et établissements concernés. Nous proposons un accompagnement informatif et organisationnel, sans garantie de visa, d’admission ou de contrat.",
         faq2Q:"Pouvez-vous garantir un logement ou un contrat d’Ausbildung ?",faq2A:"Nous pouvons aider dans la recherche, la préparation et la prise de contact selon le service convenu. La disponibilité dépend de tiers et des conditions de chaque dossier.",
-        faq3Q:"Comment connaître les tarifs et le contenu des formules ?",faq3A:"Les tarifs sont indiqués ci-dessus pour chaque formule. Si vous hésitez, écrivez-nous et nous vous orienterons.",
+        faq3Q:"Comment connaître les tarifs et le contenu des formules ?",faq3A:"Le tarif est communiqué après votre prise de contact via WhatsApp et l’envoi du formulaire. Écrivez-nous pour connaître les détails et être orienté vers la formule adaptée.",
         faq4Q:"Dois-je déjà parler allemand ?",faq4A:"Non. Vous pouvez commencer depuis zéro avec notre cours d’allemand en ligne. Pour les études ou l’Ausbildung, les exigences linguistiques varient selon le parcours et l’établissement — nous pouvons vous aider à les comprendre.",
         faq5Q:"Proposez-vous vos services à des non-Algériens ?",faq5A:"Notre focus principal est sur les étudiants et diplômés algériens. Si vous venez d’un autre pays, écrivez-nous et nous vous indiquerons si nous pouvons aider ou orienter.",
         faq6Q:"Comment se déroule le paiement ?",faq6A:"Les modalités de paiement sont précisées lors de la confirmation de la formule et du périmètre. Aucun paiement n’est demandé avant un accord clair sur ce qui sera fourni.",
@@ -1188,7 +1184,7 @@
         aboutNote:"Point of contact: <strong>Mr. Zerdazi A.</strong> — message him directly on WhatsApp to find out whether our services fit your situation.",
         packagesEyebrow:"Our packages",
         packagesTitle:"Three packages for the German language course and visa.",
-        packagesIntro:"All packages are for the language-course pathway. Choose the one that fits your situation, or ask for advice if unsure.",
+        packagesIntro:"All packages are for the language-course pathway. Choose the one that fits your situation — the price is communicated after you get in touch via WhatsApp and submit your form.",
         p1Tag:"Package 01",
         p1Title:"Language course + visa assistance",
         p1Desc:"For finalising a language course enrolment and preparing the visa file.",
@@ -1213,7 +1209,7 @@
         p3b:"Ausbildung opportunity search",
         p3c:"Guidance with Ausbildung applications",
         p3Cta:"I choose Package 3 ↗",
-        priceLabel:"Service fee",
+        priceHidden:"💰 Price is communicated after you get in touch via WhatsApp and submit your form.",
         pkgAdviceText:"Not sure which package fits?",
         pkgAdviceCta:"Ask for advice ↗",
         discTitle:"Important | Our service fees do not include official or third-party costs.",
@@ -1244,7 +1240,7 @@
         faq0bA:"No. We start with you from zero — no prior knowledge of German is required before you begin with us.",
         faq1Q:"Do you guarantee a visa or admission?",faq1A:"No. Final decisions belong to the relevant authorities and institutions. We provide guidance and organisational support but cannot guarantee a visa, admission, or contract.",
         faq2Q:"Can you guarantee accommodation or an Ausbildung contract?",faq2A:"We can assist with searching, preparation, and communication within the agreed service scope. Availability depends on third parties and each applicant’s circumstances.",
-        faq3Q:"How can I find out the prices and what each package includes?",faq3A:"Prices are listed above for each package. If you are unsure which fits, message us and we will guide you.",
+        faq3Q:"How can I find out the prices and what each package includes?",faq3A:"The price is communicated after you get in touch via WhatsApp and submit your form. Message us for details and guidance on the right package.",
         faq4Q:"Do I need to speak German already?",faq4A:"No. You can start from zero with our online German course. For study or Ausbildung, language requirements vary by pathway and institution — we can help you understand them.",
         faq5Q:"Do you offer services to non-Algerians?",faq5A:"Our primary focus is on Algerian students and graduates. If you are from another country, message us and we will let you know whether we can help or point you in the right direction.",
         faq6Q:"How does payment work?",faq6A:"Payment methods and details are explained once the package and service scope are confirmed. We do not request any payment before a clear agreement on what will be provided.",
