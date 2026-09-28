@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#142c35">
+  <meta name="description" content="دورة اللغة الألمانية أونلاين للجزائريين + مرافقة الطلبة والخريجين في خطوات الدراسة والتكوين المهني والإقامة في ألمانيا.">
+  <title>AGAPC | دورة الألمانية أونلاين والاستشارات الأكاديمية — SILA Academy</title>
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AGAPC — دورة الألمانية أونلاين + استشارات أكاديمية | SILA Academy">
+  <meta property="og:description" content="تعلّم الألمانية أونلاين من الصفر، مع مرافقة عملية نحو الدراسة والتكوين المهني في ألمانيا.">
+  <meta property="og:locale" content="ar_DZ">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AGAPC — دورة الألمانية أونلاين">
+  <meta name="twitter:description" content="تعلّم الألمانية أونلاين من الصفر، مع مرافقة عملية نحو ألمانيا.">
+
+  <!-- Inline SVG favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='20' fill='%23142c35'/%3E%3Cpath d='M14 43 L27 15 L40 43 M20 31 H34' fill='none' stroke='%23b6d7c2' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M38 21 C46 17 53 24 50 31 C48 36 42 37 38 34' fill='none' stroke='%23d7b66b' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M37 43 H51' stroke='%23b6d7c2' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <style>
+    :root{
+      --ink:#142c35; --muted:#4d5e64; --paper:#f7f8f5; --white:#fff;
+      --green:#b6d7c2; --green-dark:#285b4b; --line:#e2e8e4;
+      --sand:#f0eee6; --gold:#d7b66b; --shadow:0 18px 50px rgba(20,44,53,.08);
+      --radius:22px;
+      --focus:0 0 0 3px rgba(40,91,75,.35);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans Arabic","IBM Plex Sans Arabic",system-ui,-apple-system,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.8}
+    a{color:inherit;text-decoration:none}
+    button{font:inherit;cursor:pointer}
+    .container{width:min(1120px,calc(100% - 40px));margin-inline:auto}
+
+    /* Accessibility */
+    .skip-link{position:absolute;inset-inline-start:-9999px;top:0;background:var(--ink);color:#fff;padding:10px 16px;border-radius:0 0 10px 0;z-index:100}
+    .skip-link:focus{inset-inline-start:0}
+    :focus-visible{outline:none;box-shadow:var(--focus);border-radius:10px}
+
+    /* Announcement ribbon */
+    .ribbon{
+      background:linear-gradient(90deg,#d7b66b 0%,#e6c885 50%,#d7b66b 100%);
+      color:#142c35;
+      font-size:.85rem;font-weight:700;
+      padding:9px 0;
+      position:relative;z-index:25;
+    }
+    .ribbon .container{display:flex;align-items:center;justify-content:center;gap:12px;text-align:center}
+    .ribbon a{text-decoration:underline;font-weight:800;color:#142c35}
+    .ribbon a:hover{opacity:.8}
+    .ribbon .ribbon-close{
+      background:transparent;border:none;color:#142c35;
+      font-size:1.1rem;line-height:1;
+      padding:2px 6px;border-radius:6px;cursor:pointer;
+      position:absolute;inset-inline-end:12px;top:50%;transform:translateY(-50%);
+    }
+    .ribbon .ribbon-close:hover{background:rgba(20,44,53,.08)}
+    .ribbon-dot{width:8px;height:8px;border-radius:50%;background:#142c35;display:inline-block;animation:blink 1.6s infinite}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+    @media(max-width:600px){
+      .ribbon{font-size:.75rem;padding:8px 0}
+      .ribbon .container{padding-inline-end:28px}
+    }
+
+    .topbar{background:var(--ink);color:#e9f1ec;font-size:.86rem}
+    .topbar .container{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:8px 0}
+    .topbar a{color:var(--green)}
+
+    header{position:sticky;top:0;z-index:20;background:rgba(247,248,245,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(226,232,228,.8)}
+    .nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;min-width:220px}
+    .logo{width:48px;height:48px;flex-shrink:0}
+    .brand-name{font-weight:800;letter-spacing:.04em;font-size:1rem;line-height:1.2}
+    .brand-sub{font-size:.72rem;color:var(--muted);display:block;margin-top:4px}
+    .navlinks{display:flex;align-items:center;gap:22px;font-size:.92rem;color:#334a51}
+    .navlinks a{position:relative;padding:6px 0}
+    .navlinks a:hover{color:var(--green-dark)}
+    .navlinks a.active{color:var(--green-dark);font-weight:700}
+    .navlinks a.active:after{content:"";position:absolute;inset-inline:0;bottom:-4px;height:2px;background:var(--gold);border-radius:2px}
+    .nav-actions{display:flex;align-items:center;gap:10px}
+    .lang-select{border:1px solid var(--line);background:transparent;border-radius:999px;padding:9px 12px;color:var(--ink)}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:1px solid transparent;border-radius:999px;padding:12px 20px;font-weight:700;transition:.2s ease}
+    .btn-primary{background:var(--green-dark);color:white}
+    .btn-primary:hover{background:#1d493b;transform:translateY(-1px)}
+    .btn-light{background:white;border-color:var(--line);color:var(--ink)}
+    .btn-light:hover{border-color:var(--green-dark)}
+
+    .hero{padding:82px 0 72px;overflow:hidden;position:relative}
+    .hero:before{content:"";position:absolute;top:-120px;inset-inline-start:-140px;width:440px;height:440px;border-radius:50%;background:radial-gradient(circle,rgba(182,215,194,.45),rgba(182,215,194,0) 70%);pointer-events:none}
+    .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:64px;position:relative}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green-dark);font-size:.84rem;font-weight:800;letter-spacing:.03em}
+    .eyebrow:before{content:"";width:26px;height:2px;background:var(--gold)}
+    h1,h2,h3,p{margin-top:0}
+    h1{font-size:clamp(2.35rem,5vw,4.3rem);line-height:1.2;letter-spacing:-.04em;margin:18px 0 22px;max-width:700px}
+    h1 em{font-style:normal;color:var(--green-dark)}
+    .hero-copy{font-size:1.1rem;color:var(--muted);max-width:620px;margin-bottom:28px}
+    .hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+    .trust-line{display:flex;align-items:center;gap:10px;margin-top:28px;color:var(--muted);font-size:.88rem}
+    .trust-dot{width:8px;height:8px;background:var(--gold);border-radius:50%;flex-shrink:0}
+    .hero-card{background:var(--ink);color:white;border-radius:28px;padding:32px;min-height:390px;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+    .hero-card:after{content:"";position:absolute;width:270px;height:270px;border:1px solid rgba(182,215,194,.3);border-radius:50%;top:-90px;inset-inline-start:-70px;box-shadow:0 0 0 32px rgba(182,215,194,.04),0 0 0 65px rgba(182,215,194,.03)}
+    .card-kicker{font-size:.8rem;color:var(--green);font-weight:700}
+    .hero-card h2{font-size:1.75rem;line-height:1.45;margin:18px 0 14px;max-width:320px;position:relative;z-index:1}
+    .hero-card p{color:#c5d1d0;max-width:340px;font-size:.95rem;position:relative;z-index:1}
+    .route{display:flex;gap:10px;align-items:center;margin-top:28px;position:relative;z-index:1;flex-wrap:wrap}
+    .route span{border:1px solid rgba(255,255,255,.18);padding:8px 12px;border-radius:999px;font-size:.8rem;color:#f0f4f0}
+    .route b{color:var(--gold)}
+    .hero-card .hero-card-link{
+      display:inline-flex;align-items:center;gap:8px;
+      margin-top:22px;position:relative;z-index:1;
+      color:var(--gold);font-weight:800;font-size:.88rem;
+      border-bottom:1px dashed rgba(215,182,107,.5);padding-bottom:3px;
+    }
+    .hero-card .hero-card-link:hover{color:#e6c885;border-bottom-color:#e6c885}
+
+    /* ===== ONLINE GERMAN COURSE — featured highlight ===== */
+    .online-course{
+      background:linear-gradient(160deg,#142c35 0%,#1d493b 100%);
+      color:white;
+      padding:64px 0 68px;
+      position:relative;
+      overflow:hidden;
+    }
+    .online-course:before{
+      content:"";
+      position:absolute;top:-160px;inset-inline-end:-160px;
+      width:520px;height:520px;border-radius:50%;
+      background:radial-gradient(circle,rgba(215,182,107,.28),rgba(215,182,107,0) 65%);
+      pointer-events:none;
+    }
+    .online-course:after{
+      content:"";
+      position:absolute;bottom:-140px;inset-inline-start:-120px;
+      width:380px;height:380px;border-radius:50%;
+      border:1px solid rgba(182,215,194,.18);
+      box-shadow:0 0 0 40px rgba(182,215,194,.04),0 0 0 80px rgba(182,215,194,.03);
+      pointer-events:none;
+    }
+    .online-inner{
+      position:relative;z-index:1;
+      display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:center;
+    }
+    .online-badge{
+      display:inline-flex;align-items:center;gap:8px;
+      background:rgba(215,182,107,.14);
+      border:1px solid rgba(215,182,107,.45);
+      color:#f4e6c2;
+      padding:7px 14px;border-radius:999px;
+      font-size:.78rem;font-weight:800;letter-spacing:.06em;
+      text-transform:uppercase;
+    }
+    .online-badge .pulse{
+      width:9px;height:9px;border-radius:50%;background:#d7b66b;
+      box-shadow:0 0 0 0 rgba(215,182,107,.7);
+      animation:pulse 1.8s infinite;
+    }
+    @keyframes pulse{
+      0%{box-shadow:0 0 0 0 rgba(215,182,107,.7)}
+      70%{box-shadow:0 0 0 12px rgba(215,182,107,0)}
+      100%{box-shadow:0 0 0 0 rgba(215,182,107,0)}
+    }
+    .online-course h2{
+      font-size:clamp(1.9rem,3.6vw,2.9rem);
+      line-height:1.25;letter-spacing:-.03em;
+      margin:18px 0 16px;color:white;max-width:640px;
+    }
+    .online-course h2 em{font-style:normal;color:var(--green)}
+    .online-lead{
+      color:#c8d5cf;font-size:1.05rem;max-width:600px;margin-bottom:26px;
+    }
+    .online-perks{
+      display:flex;flex-wrap:wrap;gap:10px;margin:0 0 28px;
+    }
+    .perk{
+      display:inline-flex;align-items:center;gap:8px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.14);
+      padding:9px 14px;border-radius:999px;
+      font-size:.85rem;color:#eef4ee;
+    }
+    .perk svg{width:15px;height:15px;flex-shrink:0;color:var(--green)}
+    .online-cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+    .btn-spot{
+      background:var(--gold);color:#142c35;
+      padding:16px 26px;font-weight:800;border-radius:999px;
+      display:inline-flex;align-items:center;gap:10px;
+      border:1px solid var(--gold);
+      box-shadow:0 12px 30px rgba(215,182,107,.28);
+      transition:.2s ease;
+    }
+    .btn-spot:hover{background:#e6c885;transform:translateY(-2px);box-shadow:0 16px 36px rgba(215,182,107,.36)}
+    .btn-spot svg{width:18px;height:18px}
+    .btn-ghost{
+      color:white;border:1px solid rgba(255,255,255,.3);
+      padding:14px 22px;border-radius:999px;font-weight:700;
+      display:inline-flex;align-items:center;gap:8px;
+    }
+    .btn-ghost:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)}
+    .online-note{
+      margin-top:20px;font-size:.85rem;color:#a9bab3;
+      display:flex;align-items:center;gap:8px;
+    }
+    .online-note svg{width:14px;height:14px;color:var(--gold);flex-shrink:0}
+    .zero-card{
+      background:rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:24px;padding:32px 28px;
+      position:relative;overflow:hidden;
+      backdrop-filter:blur(6px);
+    }
+    .zero-card .big-zero{
+      font-size:clamp(4rem,9vw,6.4rem);
+      font-weight:900;line-height:1;
+      color:var(--gold);
+      letter-spacing:-.04em;
+      margin:0 0 6px;
+    }
+    .zero-card h3{
+      font-size:1.35rem;color:white;margin:0 0 10px;line-height:1.35;
+    }
+    .zero-card p{color:#c8d5cf;font-size:.94rem;margin:0 0 20px}
+    .zero-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+    .zero-list li{
+      display:flex;gap:10px;align-items:flex-start;
+      font-size:.92rem;color:#eef4ee;
+    }
+    .zero-list .check{
+      background:var(--gold);color:#142c35;
+      width:22px;height:22px;font-size:.72rem;flex-shrink:0;
+    }
+    @media(max-width:900px){
+      .online-inner{grid-template-columns:1fr;gap:32px}
+      .online-course{padding:52px 0}
+    }
+    @media(max-width:600px){
+      .online-perks{gap:8px}
+      .perk{font-size:.8rem;padding:7px 11px}
+      .btn-spot{width:100%;justify-content:center}
+      .zero-card{padding:24px 22px}
+    }
+
+    section{padding:78px 0}
+    .section-head{max-width:720px;margin-bottom:34px}
+    .section-head h2{font-size:clamp(1.8rem,3.2vw,2.7rem);line-height:1.3;letter-spacing:-.03em;margin:12px 0}
+    .section-head p{color:var(--muted);margin-bottom:0}
+
+    /* Who it's for */
+    .audience{background:white;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .audience .container{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding:34px 0}
+    .audience-item{display:flex;gap:14px;align-items:flex-start}
+    .audience-item .ico{flex-shrink:0;width:40px;height:40px;border-radius:12px;background:#eaf3ed;color:var(--green-dark);display:grid;place-items:center}
+    .audience-item h4{margin:0 0 4px;font-size:.98rem}
+    .audience-item p{margin:0;color:var(--muted);font-size:.86rem}
+
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .service{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:26px;min-height:230px;transition:.2s}
+    .service:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+    .service-icon{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:#eaf3ed;color:var(--green-dark);margin-bottom:20px}
+    .service-icon svg{width:22px;height:22px}
+    .service h3{font-size:1.12rem;margin-bottom:8px}
+    .service p{font-size:.93rem;color:var(--muted);margin-bottom:0}
+
+    /* Timeline */
+    .timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:10px}
+    .tl-item{background:white;border:1px solid var(--line);border-radius:18px;padding:20px}
+    .tl-item .tl-week{font-size:.74rem;font-weight:800;color:var(--green-dark);letter-spacing:.08em}
+    .tl-item h4{margin:8px 0 6px;font-size:1rem}
+    .tl-item p{margin:0;color:var(--muted);font-size:.88rem}
+    .tl-note{margin-top:14px;font-size:.82rem;color:var(--muted)}
+
+    .process{background:var(--sand)}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    .step{border-top:1px solid #d4d9d1;padding:22px 4px 0}
+    .step-number{font-size:.78rem;color:var(--green-dark);font-weight:800;letter-spacing:.1em}
+    .step h3{font-size:1.08rem;margin:12px 0 8px}
+    .step p{color:var(--muted);font-size:.92rem;margin-bottom:0}
+
+    /* About */
+    .about{background:white}
+    .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:center}
+    .about-illustration{
+      aspect-ratio:4/5;border-radius:24px;border:1px solid var(--line);
+      background:linear-gradient(160deg,#eaf2ec 0%,#f0eee6 100%);
+      position:relative;overflow:hidden;display:block;
+    }
+    .about-illustration svg{display:block;width:100%;height:100%}
+    .about h2{font-size:clamp(1.7rem,3vw,2.4rem);line-height:1.3;margin:12px 0}
+    .about p{color:var(--muted)}
+    .about-list{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:12px}
+    .about-list li{display:flex;gap:12px;align-items:flex-start;font-size:.95rem}
+    .check{display:grid;place-items:center;width:24px;height:24px;flex-shrink:0;background:#eaf3ed;color:var(--green-dark);border-radius:50%;font-weight:800;font-size:.8rem}
+    .about-note{margin-top:20px;font-size:.85rem;color:var(--ink);background:#f7f8f5;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+    .about-note strong{color:var(--green-dark)}
+
+    /* Packages */
+    .packages-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+    .package{background:white;border:1px solid var(--line);border-radius:24px;padding:26px;display:flex;flex-direction:column;min-height:460px}
+    .package.featured{background:var(--ink);color:white;border-color:var(--ink);transform:translateY(-8px)}
+    .package-tag{font-size:.76rem;color:var(--green-dark);font-weight:800;letter-spacing:.04em}
+    .featured .package-tag{color:var(--green)}
+    .package h3{font-size:1.18rem;margin:10px 0 8px;line-height:1.35}
+    .package p{font-size:.9rem;color:var(--muted);margin-bottom:12px}
+    .featured p{color:#c5d1d0}
+    .package ul{padding-inline-start:20px;margin:6px 0 14px;font-size:.9rem}
+    .package li{margin:5px 0}
+    .pkg-exclude{
+      font-size:.8rem;color:#8a5a5a;background:#fbf4f4;border:1px solid #f0dede;
+      border-radius:10px;padding:8px 12px;margin:0 0 14px;
+    }
+    .featured .pkg-exclude{color:#f0c8c8;background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.15)}
+    .pkg-price{display:flex;align-items:baseline;gap:10px;margin-top:auto;padding-top:10px;border-top:1px solid var(--line)}
+    .featured .pkg-price{border-top-color:rgba(255,255,255,.15)}
+    .price-label{font-size:.78rem;color:var(--muted);font-weight:700}
+    .featured .price-label{color:#c5d1d0}
+    .price-value{font-size:1.55rem;font-weight:800;color:var(--green-dark);letter-spacing:-.02em}
+    .featured .price-value{color:var(--green)}
+    .package .btn{margin-top:14px}
+    .package .btn-light{background:transparent;border-color:#50646a;color:white}
+    .package .btn-light:hover{border-color:var(--green)}
+    .package:not(.featured) .btn-light{background:white;border-color:var(--line);color:var(--ink)}
+    .package:not(.featured) .btn-light:hover{border-color:var(--green-dark)}
+
+    /* Advice strip */
+    .pkg-advice{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px;margin-top:28px;padding:18px;background:white;border:1px dashed var(--line);border-radius:16px}
+    .pkg-advice span{font-weight:700;color:var(--ink)}
+
+    /* Disclaimer */
+    .pkg-disclaimer{margin-top:26px;background:#fff8e8;border:1px solid #f0e2b8;border-radius:18px;padding:24px 26px}
+    .pkg-disclaimer-title{font-weight:800;color:#7a5b12;margin-bottom:10px}
+    .pkg-disclaimer p{margin:0 0 8px;color:#5c4a1e;font-size:.92rem}
+    .disc-list{margin:8px 0 12px;padding-inline-start:20px;color:#5c4a1e;font-size:.9rem;columns:2;column-gap:24px}
+    .disc-list li{margin:4px 0;break-inside:avoid}
+    .disc-note{margin-top:6px!important;font-weight:700;color:#7a5b12}
+
+    /* Prepare / documents */
+    .document-panel{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;background:#eaf2ec;border-radius:28px;padding:42px}
+    .document-panel h2{font-size:clamp(1.7rem,3vw,2.4rem);line-height:1.3;margin:12px 0}
+    .document-panel p{color:#526b60}
+    .doc-list{list-style:none;padding:0;margin:20px 0 0}
+    .doc-list li{display:flex;gap:10px;align-items:flex-start;margin:12px 0;font-size:.95rem}
+    .doc-card{background:white;border:1px solid #dce8de;border-radius:22px;padding:28px;box-shadow:0 10px 30px rgba(20,44,53,.04)}
+    .doc-card h3{margin:6px 0 10px}
+    .doc-card p{font-size:.9rem;color:var(--muted)}
+    .doc-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0 18px}
+    .doc-chip{background:#f7f8f5;border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:.85rem;display:flex;gap:8px;align-items:center}
+    .doc-chip .dot{width:6px;height:6px;border-radius:50%;background:var(--green-dark);flex-shrink:0}
+    .notice{font-size:.82rem;color:var(--muted);margin-top:14px}
+
+    .faq-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:55px}
+    .faq-grid h2{font-size:2rem;line-height:1.3}
+    .faq-intro{color:var(--muted)}
+    details{border-bottom:1px solid var(--line);padding:17px 0}
+    summary{font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:15px;align-items:center}
+    summary::-webkit-details-marker{display:none}
+    summary .plus{color:var(--green-dark);font-size:1.2rem;line-height:1;transition:transform .2s}
+    details[open] summary .plus{transform:rotate(45deg)}
+    details p{color:var(--muted);font-size:.94rem;padding-top:12px;margin-bottom:0}
+
+    .contact{background:var(--ink);color:white}
+    .contact-grid{display:grid;grid-template-columns:1fr auto;gap:35px;align-items:center}
+    .contact h2{font-size:clamp(1.8rem,3.5vw,2.8rem);line-height:1.3;margin:12px 0}
+    .contact p{color:#c5d1d0;max-width:650px;margin-bottom:0}
+    .contact .eyebrow{color:var(--green)}
+
+    footer{background:#10242b;color:#b8c6c4;padding:25px 0;font-size:.83rem}
+    .footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}
+    .footer-inner strong{color:white}
+
+    .whatsapp-float{position:fixed;z-index:30;bottom:20px;inset-inline-end:20px;display:flex;align-items:center;gap:10px;background:#1f7b53;color:white;padding:13px 19px;border-radius:999px;box-shadow:0 10px 30px rgba(20,44,53,.22);font-weight:800}
+    .whatsapp-float:hover{background:#176441;transform:translateY(-2px)}
+    .wa-icon{display:grid;place-items:center}
+    .wa-icon svg{width:18px;height:18px}
+
+    [dir="ltr"] .eyebrow:before{order:-1}
+    [dir="ltr"] .package ul{padding-inline-start:20px}
+
+    @media(max-width:900px){
+      .navlinks{display:none}
+      .hero-grid{grid-template-columns:1fr;gap:32px}
+      .hero-card{min-height:300px}
+      .services-grid{grid-template-columns:repeat(2,1fr)}
+      .packages-grid{grid-template-columns:1fr;max-width:520px;margin-inline:auto}
+      .package.featured{transform:none}
+      .steps,.timeline{grid-template-columns:repeat(2,1fr);row-gap:18px}
+      .about-grid{grid-template-columns:1fr;gap:28px}
+      .about-illustration{aspect-ratio:16/10}
+      .document-panel{grid-template-columns:1fr;padding:28px}
+      .faq-grid{grid-template-columns:1fr;gap:15px}
+      .audience .container{grid-template-columns:1fr;gap:16px;padding:26px 0}
+    }
+    @media(max-width:600px){
+      .container{width:min(100% - 28px,1120px)}
+      .topbar .container{font-size:.75rem}
+      .nav{min-height:70px}.brand{min-width:0}.brand-name{font-size:.88rem}.brand-sub{font-size:.65rem}
+      .logo{width:40px;height:40px}.nav-actions .btn{display:none}.lang-select{padding:7px 9px}
+      .hero{padding:55px 0 48px}h1{font-size:2.45rem}
+      section{padding:55px 0}
+      .services-grid,.steps,.timeline{grid-template-columns:1fr}
+      .service{min-height:auto}
+      .contact-grid{grid-template-columns:1fr}.contact-grid .btn{justify-self:start}
+      .document-panel{padding:23px}
+      .doc-grid{grid-template-columns:1fr}
+      .disc-list{columns:1}
+      .whatsapp-float{bottom:13px;inset-inline-end:13px;padding:11px 15px;font-size:.9rem}
+      .route{flex-wrap:wrap}
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+  <!-- Announcement ribbon -->
+  <div class="ribbon" id="ribbon" role="region" aria-label="Announcement">
+    <div class="container">
+      <span class="ribbon-dot" aria-hidden="true"></span>
+      <span data-i18n="ribbonText">🎓 التسجيل مفتوح الآن في دورة اللغة الألمانية أونلاين — نبدأ من الصفر.</span>
+      <a href="https://wa.me/213795369006?text=السلام%20عليكم،%20أرغب%20في%20حجز%20مقعدي%20في%20دورة%20اللغة%20الألمانية%20الأونلاين." target="_blank" rel="noopener" data-i18n="ribbonCta">احجز مقعدك →</a>
+      <button class="ribbon-close" id="ribbonClose" aria-label="Dismiss announcement" type="button">×</button>
+    </div>
+  </div>
+
+  <div class="topbar">
+    <div class="container">
+      <span data-i18n="topline">مرافقتك نحو فرص الدراسة والتكوين في ألمانيا</span>
+      <a href="https://wa.me/213795369006" target="_blank" rel="noopener">WhatsApp · +213 795 36 90 06</a>
+    </div>
+  </div>
+
+  <header>
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="AGAPC home">
+        <svg class="logo" viewBox="0 0 64 64" role="img" aria-label="AGAPC logo">
+          <rect x="1" y="1" width="62" height="62" rx="20" fill="#142c35"/>
+          <path d="M14 43 L27 15 L40 43 M20 31 H34" fill="none" stroke="#b6d7c2" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M38 21 C46 17 53 24 50 31 C48 36 42 37 38 34" fill="none" stroke="#d7b66b" stroke-width="3" stroke-linecap="round"/>
+          <path d="M37 43 H51" stroke="#b6d7c2" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span><span class="brand-name">AGAPC</span><span class="brand-sub" data-i18n="brandSub">شراكة أكاديمية ألمانية · فرع SILA Academy</span></span>
+      </a>
+      <div class="navlinks" id="navlinks">
+        <a href="#online-course" data-i18n="navOnline">دورة اللغة أونلاين</a>
+        <a href="#services" data-i18n="navServices">خدماتنا</a>
+        <a href="#process" data-i18n="navProcess">كيف نعمل</a>
+        <a href="#about" data-i18n="navAbout">من نحن</a>
+        <a href="#packages" data-i18n="navPackages">الباقات</a>
+        <a href="#prepare" data-i18n="navApply">ابدأ طلبك</a>
+      </div>
+      <div class="nav-actions">
+        <select class="lang-select" id="language" aria-label="Choose language">
+          <option value="ar">العربية</option><option value="fr">Français</option><option value="en">English</option>
+        </select>
+        <a class="btn btn-primary" href="https://wa.me/213795369006" target="_blank" rel="noopener" data-i18n="navCta">تواصل معنا</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow" data-i18n="heroEyebrow">استشارات أكاديمية ومرافقة عملية</span>
+          <h1 data-i18n="heroTitle">خطوتك القادمة نحو <em>ألمانيا</em> تبدأ بخطة واضحة.</h1>
+          <p class="hero-copy" data-i18n="heroCopy">نرافق الطلبة والخريجين الجزائريين في التحضير للدراسة والتكوين المهني في ألمانيا، من تنظيم الملف والبحث عن الخيارات المناسبة إلى الاستعداد للسفر والاستقرار.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="https://wa.me/213795369006?text=السلام%20عليكم،%20أرغب%20في%20الاستفسار%20عن%20خدمات%20AGAPC." target="_blank" rel="noopener" data-i18n="heroCta">ناقش مشروعك معنا ↗</a>
+            <a class="btn btn-light" href="#online-course" data-i18n="heroSecondary">دورة اللغة أونلاين</a>
+          </div>
+          <div class="trust-line"><span class="trust-dot"></span><span data-i18n="trustLine">مرافقة منظمة، تواصل واضح، وخطوات تناسب وضعك.</span></div>
+        </div>
+        <div class="hero-card">
+          <span class="card-kicker" data-i18n="cardKicker">من الجزائر إلى ألمانيا</span>
+          <h2 data-i18n="cardTitle">طموحك يستحق مساراً مدروساً.</h2>
+          <p data-i18n="cardCopy">دورة الألمانية أونلاين من الصفر، ثم الدراسة، اللغة، التكوين المهني والسكن — نساعدك على فهم الخيارات وتنظيم الخطوات التالية.</p>
+          <div class="route">
+            <span data-i18n="route1">تحديد الهدف</span><b>→</b>
+            <span data-i18n="route2">تحضير الملف</span><b>→</b>
+            <span data-i18n="route3">الخطوة التالية</span>
+          </div>
+          <a class="hero-card-link" href="#online-course" data-i18n="cardLink">🎓 دورة اللغة أونلاين — التسجيل مفتوح</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ONLINE GERMAN COURSE — FEATURED ============ -->
+    <section class="online-course" id="online-course" aria-labelledby="online-course-title">
+      <div class="container online-inner">
+        <div>
+          <span class="online-badge">
+            <span class="pulse" aria-hidden="true"></span>
+            <span data-i18n="ocBadge">دورة أونلاين · التسجيل مفتوح</span>
+          </span>
+          <h2 id="online-course-title" data-i18n="ocTitle">تعلّم الألمانية <em>أونلاين</em> من الجزائر — وابدأ من الصفر.</h2>
+          <p class="online-lead" data-i18n="ocLead">دورة ألمانية أونلاين موجهة للجزائريين، مع متابعة مباشرة من فريق AGAPC. لا تحتاج إلى أي معرفة مسبقة باللغة — نبدأ معك من المستوى صفر خطوة بخطوة.</p>
+
+          <div class="online-perks">
+            <span class="perk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+              <span data-i18n="ocPerk1">تبدأ من الصفر</span>
+            </span>
+            <span class="perk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/><circle cx="12" cy="12" r="10"/></svg>
+              <span data-i18n="ocPerk2">100% أونلاين</span>
+            </span>
+            <span class="perk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg>
+              <span data-i18n="ocPerk3">متابعة مباشرة</span>
+            </span>
+            <span class="perk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span data-i18n="ocPerk4">مقاعد محدودة</span>
+            </span>
+          </div>
+
+          <div class="online-cta-row">
+            <a class="btn-spot"
+               href="https://wa.me/213795369006?text=السلام%20عليكم،%20أرغب%20في%20حجز%20مقعدي%20في%20دورة%20اللغة%20الألمانية%20الأونلاين%20مع%20AGAPC."
+               target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.13c-.24.68-1.42 1.3-1.96 1.34-.5.05-.98.24-3.3-.69-2.78-1.1-4.55-3.94-4.69-4.13-.14-.19-1.13-1.5-1.13-2.86 0-1.36.72-2.03.97-2.31.24-.28.53-.35.71-.35.18 0 .35.01.5.01.16 0 .38-.06.59.45.21.5.72 1.75.78 1.88.06.13.1.28.02.45-.08.17-.12.28-.24.43-.12.15-.25.33-.36.44-.12.12-.24.25-.11.49.13.24.58 1 1.25 1.62.86.8 1.58 1.05 1.82 1.17.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.53-.12.21.08 1.36.64 1.6.76.24.12.4.18.46.28.06.1.06.6-.18 1.28Z"/></svg>
+              <span data-i18n="ocCta">احجز مقعدك عبر واتساب</span>
+            </a>
+            <a class="btn-ghost" href="#packages" data-i18n="ocSecondary">شاهد الباقات</a>
+          </div>
+
+          <p class="online-note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4M12 17h.01"/><circle cx="12" cy="12" r="10"/></svg>
+            <span data-i18n="ocNote">لضمان مقعدك، يرجى إرسال رسالة عبر واتساب.</span>
+          </p>
+        </div>
+
+        <div class="zero-card">
+          <div class="big-zero" aria-hidden="true">0</div>
+          <h3 data-i18n="ocZeroTitle">نبدأ معك من الصفر</h3>
+          <p data-i18n="ocZeroText">لا تحتاج إلى أي معرفة مسبقة باللغة الألمانية قبل أن تبدأ معنا. نرافقك من الحرف الأول حتى أول محادثة.</p>
+          <ul class="zero-list">
+            <li><span class="check">✓</span><span data-i18n="ocZero1">لا شروط لغة مسبقة</span></li>
+            <li><span class="check">✓</span><span data-i18n="ocZero2">مناسب للمبتدئين تماماً</span></li>
+            <li><span class="check">✓</span><span data-i18n="ocZero3">تقدّم خطوة بخطوة مع المتابعة</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO IT'S FOR -->
+    <div class="audience" aria-label="Who this is for">
+      <div class="container">
+        <div class="audience-item">
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 4 2 10l10 6 10-6Z"/><path d="M6 12v5c0 1 2.5 3 6 3s6-2 6-3v-5"/></svg>
+          </span>
+          <div>
+            <h4 data-i18n="aud1T">طلبة جامعيون</h4>
+            <p data-i18n="aud1D">تخطّط لمتابعة الدراسة أو إكمالها في ألمانيا.</p>
+          </div>
+        </div>
+        <div class="audience-item">
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2v6h6"/><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M8 13h8M8 17h5"/></svg>
+          </span>
+          <div>
+            <h4 data-i18n="aud2T">خريجون جدد</h4>
+            <p data-i18n="aud2D">تبحث عن تكوين مهني (Ausbildung) أو مسار عملي.</p>
+          </div>
+        </div>
+        <div class="audience-item">
+          <span class="ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M12 3v18"/><circle cx="12" cy="12" r="9"/></svg>
+          </span>
+          <div>
+            <h4 data-i18n="aud3T">مستكشفو الفرص</h4>
+            <p data-i18n="aud3D">في مرحلة الاستفسار ويحتاجون صورة أوضح قبل القرار.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" data-i18n="servicesEyebrow">خدماتنا</span>
+          <h2 data-i18n="servicesTitle">دعم عملي في كل مرحلة من رحلتك.</h2>
+          <p data-i18n="servicesIntro">خدمات مرنة للطلبة، الخريجين الجدد، وكل من يستكشف فرصة تعليمية أو مهنية في ألمانيا.</p>
+        </div>
+        <div class="services-grid">
+          <article class="service">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2v6h6"/><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="m9 15 2 2 4-4"/></svg>
+            </div>
+            <h3 data-i18n="s1Title">التحضير لملف التأشيرة</h3>
+            <p data-i18n="s1Text">مساعدة في فهم المتطلبات، ترتيب الوثائق، وإعداد قائمة بالخطوات اللازمة حسب نوع الطلب.</p>
+          </article>
+          <article class="service">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10 12 3l9 7"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>
+            </div>
+            <h3 data-i18n="s2Title">البحث عن السكن</h3>
+            <p data-i18n="s2Text">إرشاد حول خيارات الإقامة، منصات البحث، التواصل مع الجهات المعنية، والاستعداد قبل الوصول.</p>
+          </article>
+          <article class="service">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h9l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M8 12h8M8 16h5"/></svg>
+            </div>
+            <h3 data-i18n="s3Title">مدارس اللغة والعقود</h3>
+            <p data-i18n="s3Text">مساعدة في استكشاف مدارس اللغة، مقارنة الخيارات، وفهم تفاصيل التسجيل والعقد.</p>
+          </article>
+          <article class="service">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18M6 7V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2"/><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 13h6"/></svg>
+            </div>
+            <h3 data-i18n="s4Title">البحث عن Ausbildung</h3>
+            <p data-i18n="s4Text">دعم في البحث عن فرص التكوين المهني، تجهيز السيرة الذاتية، وتحسين رسائل التقديم.</p>
+          </article>
+          <article class="service">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 4 2 10l10 6 10-6Z"/><path d="M6 12v5c0 1 2.5 3 6 3s6-2 6-3v-5"/></svg>
+            </div>
+            <h3 data-i18n="s5Title">الدراسة والقبول</h3>
+            <p data-i18n="s5Text">استكشاف المسارات الأكاديمية، تنظيم الوثائق، وفهم متطلبات التقديم للمؤسسات التعليمية.</p>
+          </article>
+          <article class="service">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/><circle cx="12" cy="12" r="10"/></svg>
+            </div>
+            <h3 data-i18n="s6Title">التحضير قبل السفر</h3>
+            <p data-i18n="s6Text">إرشادات عملية حول التخطيط، الميزانية، المواعيد، وأولوياتك في الأسابيع الأولى.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process" id="process">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" data-i18n="processEyebrow">خطوات بسيطة وواضحة</span>
+          <h2 data-i18n="processTitle">من أول رسالة إلى خطة عمل.</h2>
+          <p data-i18n="processIntro">نبدأ بفهم وضعك، ثم نحدد ما تحتاجه فعلاً وما هي الخطوات الواقعية التالية.</p>
+        </div>
+        <div class="steps">
+          <article class="step"><span class="step-number">01 / DISCOVER</span><h3 data-i18n="step1Title">أخبرنا عن هدفك</h3><p data-i18n="step1Text">الدراسة، Ausbildung، اللغة أو السكن — شاركنا وضعك الحالي.</p></article>
+          <article class="step"><span class="step-number">02 / REVIEW</span><h3 data-i18n="step2Title">أرسل الاستمارة</h3><p data-i18n="step2Text">املأ ملف المعلومات الذي سنوفره لك، ثم أرسله عبر واتساب.</p></article>
+          <article class="step"><span class="step-number">03 / PLAN</span><h3 data-i18n="step3Title">حدد الباقة المناسبة</h3><p data-i18n="step3Text">نتواصل معك لتوضيح نطاق الخدمة والتكلفة والخطوات المتاحة.</p></article>
+          <article class="step"><span class="step-number">04 / MOVE</span><h3 data-i18n="step4Title">ابدأ التحضير</h3><p data-i18n="step4Text">تابع المهام والوثائق المطلوبة وفق خطتك الفردية.</p></article>
+        </div>
+
+        <div style="margin-top:44px">
+          <span class="eyebrow" data-i18n="tlEyebrow">إطار زمني إرشادي</span>
+          <div class="timeline">
+            <div class="tl-item"><span class="tl-week" data-i18n="tl1W">الأسبوع 1</span><h4 data-i18n="tl1T">التشخيص الأولي</h4><p data-i18n="tl1D">محادثة لفهم هدفك ووضعك الحالي، وتحديد نوع الخدمة المناسب.</p></div>
+            <div class="tl-item"><span class="tl-week" data-i18n="tl2W">الأسبوع 2–4</span><h4 data-i18n="tl2T">تنظيم الملف</h4><p data-i18n="tl2D">ترتيب الوثائق الأساسية، وصياغة السيرة الذاتية أو رسالة الدافع عند الحاجة.</p></div>
+            <div class="tl-item"><span class="tl-week" data-i18n="tl3W">الأسبوع 4–8</span><h4 data-i18n="tl3T">البحث والتقديم</h4><p data-i18n="tl3D">استكشاف الخيارات (جامعات، مدارس لغة، Ausbildung) وتجهيز طلبات التقديم.</p></div>
+            <div class="tl-item"><span class="tl-week" data-i18n="tl4W">بعد ذلك</span><h4 data-i18n="tl4T">المتابعة والتحضير</h4><p data-i18n="tl4D">متابعة الردود، التحضير للمقابلات، والتخطيط العملي قبل السفر.</p></div>
+          </div>
+          <p class="tl-note" data-i18n="tlNote">الإطار الزمني إرشادي ويتغير حسب نوع المسار، جاهزية ملفك، وتوفر الفرص.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-illustration" role="img" aria-label="رسم توضيحي: مسار من الجزائر إلى ألمانيا">
+          <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#eaf2ec"/>
+                <stop offset="100%" stop-color="#f0eee6"/>
+              </linearGradient>
+              <linearGradient id="seaGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#b6d7c2"/>
+                <stop offset="100%" stop-color="#8fbfa6"/>
+              </linearGradient>
+            </defs>
+
+            <rect width="400" height="500" fill="url(#skyGrad)"/>
+            <circle cx="310" cy="105" r="34" fill="#d7b66b" opacity="0.85"/>
+            <circle cx="310" cy="105" r="52" fill="#d7b66b" opacity="0.18"/>
+
+            <path d="M70 360 Q 130 250 210 220 T 330 150"
+                  fill="none" stroke="#285b4b" stroke-width="2.5"
+                  stroke-dasharray="2 8" stroke-linecap="round" opacity="0.55"/>
+
+            <g transform="translate(232 205) rotate(-32)">
+              <path d="M0 0 L34 6 L0 12 L8 6 Z" fill="#285b4b"/>
+              <path d="M10 6 L18 -4 L22 6 Z" fill="#285b4b"/>
+              <path d="M10 6 L18 16 L22 6 Z" fill="#285b4b"/>
+            </g>
+
+            <rect x="0" y="380" width="400" height="120" fill="url(#seaGrad)"/>
+            <path d="M0 400 Q 40 394 80 400 T 160 400 T 240 400 T 320 400 T 400 400"
+                  fill="none" stroke="#ffffff" stroke-opacity="0.5" stroke-width="2"/>
+            <path d="M0 425 Q 40 419 80 425 T 160 425 T 240 425 T 320 425 T 400 425"
+                  fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
+            <path d="M0 450 Q 40 444 80 450 T 160 450 T 240 450 T 320 450 T 400 450"
+                  fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="2"/>
+
+            <g transform="translate(60 355)">
+              <rect x="-4" y="-40" width="8" height="40" fill="#285b4b" opacity="0.75"/>
+              <path d="M-22 -40 Q 0 -70 22 -40 Z" fill="#285b4b" opacity="0.75"/>
+              <circle cx="0" cy="-64" r="3" fill="#d7b66b"/>
+            </g>
+
+            <g transform="translate(330 360)">
+              <rect x="-3" y="-38" width="6" height="38" fill="#285b4b" opacity="0.75"/>
+              <path d="M-20 -38 L0 -56 L20 -38 Z" fill="#285b4b" opacity="0.75"/>
+              <rect x="-24" y="-38" width="48" height="38" fill="#285b4b" opacity="0.55"/>
+            </g>
+
+            <g fill="#285b4b" opacity="0.12">
+              <circle cx="30" cy="470" r="2"/><circle cx="46" cy="470" r="2"/><circle cx="62" cy="470" r="2"/>
+              <circle cx="30" cy="484" r="2"/><circle cx="46" cy="484" r="2"/><circle cx="62" cy="484" r="2"/>
+            </g>
+          </svg>
+        </div>
+
+        <div>
+          <span class="eyebrow" data-i18n="aboutEyebrow">من نحن</span>
+          <h2 data-i18n="aboutTitle">شراكة أكاديمية ألمانية قريبة منك.</h2>
+          <p data-i18n="aboutText">AGAPC هي مبادرة استشارية أكاديمية ألمانية، تعمل كفرع محلي ضمن <span lang="en">SILA Academy</span> في الجزائر. نرافق الطلبة والخريجين في التحضير لمساراتهم الدراسية والمهنية في ألمانيا، بمقاربة عملية تقوم على فهم وضع كل شخص قبل اقتراح الخطوات.</p>
+          <ul class="about-list">
+            <li><span class="check">✓</span><span data-i18n="about1">مرافقة فردية: كل ملف يُدرس حسب هدفه وظروفه.</span></li>
+            <li><span class="check">✓</span><span data-i18n="about2">تواصل مباشر بالعربية والفرنسية والإنجليزية.</span></li>
+            <li><span class="check">✓</span><span data-i18n="about3">إرشاد شفاف: نوضح ما نقدمه وما لا نقدمه قبل أي التزام.</span></li>
+          </ul>
+          <p class="about-note" data-i18n="aboutNote">نقطة التواصل: <strong>السيد زردازي.ا</strong> — يمكنك مراسلته مباشرة عبر واتساب لمعرفة ما إذا كانت خدماتنا مناسبة لحالتك.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section id="packages">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow" data-i18n="packagesEyebrow">باقات خدماتنا</span>
+          <h2 data-i18n="packagesTitle">ثلاث باقات لدورة اللغة الألمانية والتأشيرة.</h2>
+          <p data-i18n="packagesIntro">جميع الباقات مخصصة لمسار دورة اللغة الألمانية. اختر ما يناسب وضعك، ويمكنك دائماً طلب استشارة إن لم تكن متأكداً.</p>
+        </div>
+
+        <div class="packages-grid">
+          <!-- Package 1 -->
+          <article class="package">
+            <span class="package-tag" data-i18n="p1Tag">الباقة 01</span>
+            <h3 data-i18n="p1Title">دورة اللغة + المساعدة في التأشيرة</h3>
+            <p data-i18n="p1Desc">لمن يريد إتمام التسجيل في دورة لغة والتحضير لملف التأشيرة.</p>
+            <ul>
+              <li data-i18n="p1a">البحث عن دورة لغة ألمانية مناسبة</li>
+              <li data-i18n="p1b">التقديم والحصول على قبول دورة اللغة</li>
+              <li data-i18n="p1c">الإرشاد والمساعدة في ملف طلب التأشيرة</li>
+              <li data-i18n="p1d">قائمة الوثائق والإرشاد في تجهيز الملف</li>
+            </ul>
+            <div class="pkg-exclude" data-i18n="p1x">غير مشمول: البحث عن السكن أو Ausbildung.</div>
+            <div class="pkg-price">
+              <span class="price-label" data-i18n="priceLabel">رسوم الخدمة</span>
+              <span class="price-value">450 €</span>
+            </div>
+            <a class="btn btn-light" href="https://wa.me/213795369006?text=أرغب%20في%20اختيار%20الباقة%201%20—%20دورة%20اللغة%20%2B%20التأشيرة%20(450%20€)." target="_blank" rel="noopener" data-i18n="p1Cta">أختار الباقة 1 ↗</a>
+          </article>
+
+          <!-- Package 2 (featured) -->
+          <article class="package featured">
+            <span class="package-tag" data-i18n="p2Tag">الباقة 02</span>
+            <h3 data-i18n="p2Title">دورة اللغة + السكن + التأشيرة</h3>
+            <p data-i18n="p2Desc">لمن يريد دعماً كاملاً يشمل إيجاد سكن في ألمانيا.</p>
+            <ul>
+              <li data-i18n="p2a">كل ما في الباقة 1</li>
+              <li data-i18n="p2b">البحث عن سكن مناسب في ألمانيا</li>
+              <li data-i18n="p2c">متابعة ملف السكن مع الجهات المعنية</li>
+            </ul>
+            <div class="pkg-exclude" data-i18n="p2x">غير مشمول: البحث عن Ausbildung.</div>
+            <div class="pkg-price">
+              <span class="price-label" data-i18n="priceLabel">رسوم الخدمة</span>
+              <span class="price-value">750 €</span>
+            </div>
+            <a class="btn btn-light" href="https://wa.me/213795369006?text=أرغب%20في%20اختيار%20الباقة%202%20—%20دورة%20اللغة%20%2B%20السكن%20%2B%20التأشيرة%20(750%20€)." target="_blank" rel="noopener" data-i18n="p2Cta">أختار الباقة 2 ↗</a>
+          </article>
+
+          <!-- Package 3 -->
+          <article class="package">
+            <span class="package-tag" data-i18n="p3Tag">الباقة 03</span>
+            <h3 data-i18n="p3Title">دورة اللغة + السكن + Ausbildung + التأشيرة</h3>
+            <p data-i18n="p3Desc">لمن يريد مساراً شاملاً يجمع اللغة والسكن والبحث عن تكوين مهني.</p>
+            <ul>
+              <li data-i18n="p3a">كل ما في الباقة 2</li>
+              <li data-i18n="p3b">البحث عن فرص Ausbildung</li>
+              <li data-i18n="p3c">الإرشاد والمساعدة في التقديم على Ausbildung</li>
+            </ul>
+            <div class="pkg-price">
+              <span class="price-label" data-i18n="priceLabel">رسوم الخدمة</span>
+              <span class="price-value">1,150 €</span>
+            </div>
+            <a class="btn btn-light" href="https://wa.me/213795369006?text=أرغب%20في%20اختيار%20الباقة%203%20—%20دورة%20اللغة%20%2B%20السكن%20%2B%20Ausbildung%20%2B%20التأشيرة%20(1,150%20€)." target="_blank" rel="noopener" data-i18n="p3Cta">أختار الباقة 3 ↗</a>
+          </article>
+        </div>
+
+        <div class="pkg-advice">
+          <span data-i18n="pkgAdviceText">لست متأكداً من الباقة المناسبة؟</span>
+          <a class="btn btn-light" href="https://wa.me/213795369006?text=لست%20متأكداً%20من%20الباقة%20المناسبة،%20أرغب%20في%20استشارة." target="_blank" rel="noopener" data-i18n="pkgAdviceCta">اطلب استشارة ↗</a>
+        </div>
+
+        <div class="pkg-disclaimer" role="note">
+          <div class="pkg-disclaimer-title" data-i18n="discTitle">مهم | رسوم خدماتنا لا تشمل التكاليف الرسمية أو تكاليف جهات خارجية.</div>
+          <p data-i18n="discIntro">قد تشمل هذه التكاليف، على سبيل المثال لا الحصر:</p>
+          <ul class="disc-list">
+            <li data-i18n="disc1">رسوم دورة اللغة</li>
+            <li data-i18n="disc2">تكاليف السكن والإيداع</li>
+            <li data-i18n="disc3">رسوم التأشيرة والسفارة</li>
+            <li data-i18n="disc4">التأمين الصحي/تأمين السفر</li>
+            <li data-i18n="disc5">الحساب المغلق أو إثبات القدرة المالية</li>
+            <li data-i18n="disc6">الترجمات المعتمدة</li>
+            <li data-i18n="disc7">تذاكر السفر</li>
+            <li data-i18n="disc8">أي رسوم رسمية أو إدارية أخرى</li>
+          </ul>
+          <p class="disc-note" data-i18n="discNote">المساعدة في التأشيرة تعني الإرشاد وتجهيز الملف، أما قرار منح التأشيرة فهو من اختصاص السلطات الألمانية المختصة حصراً.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PREPARE / DOCUMENTS -->
+    <section id="prepare">
+      <div class="container">
+        <div class="document-panel">
+          <div>
+            <span class="eyebrow" data-i18n="docEyebrow">ابدأ من هنا</span>
+            <h2 data-i18n="docTitle">جهّز معلوماتك قبل التواصل معنا.</h2>
+            <p data-i18n="docText">لجعل أول محادثة مفيدة، جهّز ملخصاً بسيطاً عن وضعك. لا حاجة لكل الوثائق الآن — فقط صورة أولية تساعدنا على توجيهك.</p>
+            <ul class="doc-list">
+              <li><span class="check">✓</span><span data-i18n="doc1">هدفك الأساسي: دراسة، Ausbildung، لغة، أو سكن.</span></li>
+              <li><span class="check">✓</span><span data-i18n="doc2">مستواك الحالي في اللغة الألمانية أو الإنجليزية.</span></li>
+              <li><span class="check">✓</span><span data-i18n="doc3">آخر شهادة دراسية أو خبرة مهنية ذات صلة.</span></li>
+            </ul>
+          </div>
+          <div class="doc-card">
+            <h3 data-i18n="docCardTitle">قائمة أولية لما يُطلب عادة</h3>
+            <p data-i18n="docCardText">هذه قائمة إرشادية عامة. المتطلبات الفعلية تختلف حسب نوع الطلب والجهة.</p>
+            <div class="doc-grid">
+              <div class="doc-chip"><span class="dot"></span><span data-i18n="chip1">جواز سفر ساري</span></div>
+              <div class="doc-chip"><span class="dot"></span><span data-i18n="chip2">شهادات دراسية</span></div>
+              <div class="doc-chip"><span class="dot"></span><span data-i18n="chip3">كشف نقاط</span></div>
+              <div class="doc-chip"><span class="dot"></span><span data-i18n="chip4">سيرة ذاتية</span></div>
+              <div class="doc-chip"><span class="dot"></span><span data-i18n="chip5">شهادة لغة (إن وُجدت)</span></div>
+              <div class="doc-chip"><span class="dot"></span><span data-i18n="chip6">إثبات مالي (حسب الحالة)</span></div>
+            </div>
+            <a class="btn btn-primary" href="https://wa.me/213795369006?text=السلام%20عليكم،%20أرغب%20في%20بدء%20التحضير%20مع%20AGAPC." target="_blank" rel="noopener" data-i18n="docCta">ابدأ المحادثة عبر واتساب ↗</a>
+            <div class="notice" data-i18n="docNotice">لن نطلب منك أي وثيقة حساسة قبل توضيح نطاق الخدمة والموافقة عليه.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container faq-grid">
+        <div>
+          <span class="eyebrow" data-i18n="faqEyebrow">قبل أن تبدأ</span>
+          <h2 data-i18n="faqTitle">أسئلة شائعة.</h2>
+          <p class="faq-intro" data-i18n="faqIntro">هل لديك حالة خاصة؟ أرسل لنا رسالة وسنوضح لك ما يمكننا تقديمه.</p>
+        </div>
+        <div>
+          <details><summary><span data-i18n="faq0Q">ما هي دورة اللغة الألمانية أونلاين؟</span><span class="plus" aria-hidden="true">+</span></summary><p data-i18n="faq0A">دورة ألمانية أونلاين موجهة للجزائريين، مع متابعة مباشرة من فريق AGAPC. تبدأ من المستوى صفر ولا تشترط أي معرفة مسبقة باللغة. لضمان مقعدك، أرسل لنا رسالة عبر واتساب.</p></details>
+          <details><summary><span data-i18n="faq0bQ">هل أحتاج معرفة مسبقة بالألمانية؟</span><span class="plus" aria-hidden="true">+</span></summary><p data-i18n="faq0bA">لا. نبدأ معك من الصفر تماماً — لا تحتاج إلى أي معرفة سابقة باللغة الألمانية قبل أن تبدأ معنا.</p></details>
+          <details><summary><span data-i18n="faq1Q">هل تضمنون الحصول على التأشيرة أو القبول؟</span><span class="plus" aria-hidden="true">+</span></summary><p data-i18n="faq1A">لا. القرار النهائي يعود إلى الجهات الرسمية والمؤسسات المعنية. نقدم إرشاداً ومساعدة تنظيمية، ولا نضمن التأشيرة أو القبول أو الحصول على عقد.</p></details>
+          <details><summary><span data-i18n="faq2Q">هل يمكنكم إيجاد سكن أو عقد Ausbildung بشكل مضمون؟</span><span class="plus" aria-hidden="true">+</span></summary><p data-i18n="faq2A">نساعد في البحث والتحضير والتواصل وفق نطاق الخدمة، لكن توفر السكن أو فرص التكوين يعتمد على الجهات الخارجية وشروط كل حالة.</p></details>
+          <details><summary><span data-i18n="faq3Q">كيف أعرف الأسعار وما تتضمنه كل باقة؟</span><span class="plus" aria-hidden="true">+</span></summary><p data-i18n="faq3A">الأسعار مذكورة أعلاه لكل باقة. إذا لم تكن متأكداً من الباقة المناسبة، راسلنا وسنوجهك.</p></details>
+          <details><summary><span data-i18n="faq4Q">هل يجب أن أتحدث الألمانية مسبقاً؟</span><span class="plus" aria-hidden="true">+</span></summary><p data-i18n="faq4A">لا. يمكنك البدء من الصفر معنا في دورة اللغة الأونلاين. أما بالنسبة للدراسة أو Ausbildung، فإن متطلبات اللغة تختلف حسب المسار والمؤسسة، ويمكننا مساعدتك على فهمها.</p></details>
+          <details><summary><span data-i18n="faq5Q">هل تقدمون خدمات لغير الجزائريين؟</span><span class="plus" aria-hidden="true">+</span></summary><p data-i18n="faq5A">تركيزنا الأساسي على الطلبة والخريجين الجزائريين. إذا كنت من بلد آخر، راسلنا وسنوضح إن كان بإمكاننا المساعدة أو توجيهك.</p></details>
+          <details><summary><span data-i18n="faq6Q">كيف تتم عملية الدفع؟</span><span class="plus" aria-hidden="true">+</span></summary><p data-i18n="faq6A">تُوضح طريقة الدفع وتفاصيلها عند تأكيد الباقة ونطاق الخدمة. لا نطلب أي دفعة قبل الاتفاق الواضح على ما سيُقدَّم.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow" data-i18n="contactEyebrow">لنخطط لخطوتك التالية</span>
+          <h2 data-i18n="contactTitle">كل رحلة تبدأ بمحادثة واضحة.</h2>
+          <p data-i18n="contactText">تواصل مع السيد زردازي.ا لمعرفة الخدمات المتاحة، تفاصيل الباقات، والأسعار. وإذا أردت حجز مقعدك في دورة اللغة الأونلاين، أرسل لنا رسالة الآن.</p>
+        </div>
+        <a class="btn btn-primary" style="background:var(--green);color:var(--ink)" href="https://wa.me/213795369006" target="_blank" rel="noopener">WhatsApp · +213 795 36 90 06 ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span><strong>AGAPC</strong> · <span data-i18n="footerName">Algerian German Language &amp; Academic Partnership Consultancy</span></span>
+      <span data-i18n="footerAffiliation">فرع محلي ضمن SILA Academy · الجزائر</span>
+      <span>© <span id="year"></span> AGAPC</span>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/213795369006?text=السلام%20عليكم،%20أرغب%20في%20حجز%20مقعدي%20في%20دورة%20اللغة%20الألمانية%20الأونلاين%20مع%20AGAPC." target="_blank" rel="noopener" aria-label="Contact us on WhatsApp">
+    <span class="wa-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.13c-.24.68-1.42 1.3-1.96 1.34-.5.05-.98.24-3.3-.69-2.78-1.1-4.55-3.94-4.69-4.13-.14-.19-1.13-1.5-1.13-2.86 0-1.36.72-2.03.97-2.31.24-.28.53-.35.71-.35.18 0 .35.01.5.01.16 0 .38-.06.59.45.21.5.72 1.75.78 1.88.06.13.1.28.02.45-.08.17-.12.28-.24.43-.12.15-.25.33-.36.44-.12.12-.24.25-.11.49.13.24.58 1 1.25 1.62.86.8 1.58 1.05 1.82 1.17.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.53-.12.21.08 1.36.64 1.6.76.24.12.4.18.46.28.06.1.06.6-.18 1.28Z"/></svg>
+    </span>
+    <span data-i18n="floatCta">احجز مقعدك عبر واتساب</span>
+  </a>
+
+  <script>
+    const translations = {
+      ar: {
+        ribbonText:"🎓 التسجيل مفتوح الآن في دورة اللغة الألمانية أونلاين — نبدأ من الصفر.",
+        ribbonCta:"احجز مقعدك →",
+        topline:"مرافقتك نحو فرص الدراسة والتكوين في ألمانيا",brandSub:"شراكة أكاديمية ألمانية · فرع SILA Academy",
+        navOnline:"دورة اللغة أونلاين",navServices:"خدماتنا",navProcess:"كيف نعمل",navAbout:"من نحن",navPackages:"الباقات",navApply:"ابدأ طلبك",navCta:"تواصل معنا",
+        heroEyebrow:"استشارات أكاديمية ومرافقة عملية",heroTitle:"خطوتك القادمة نحو <em>ألمانيا</em> تبدأ بخطة واضحة.",
+        heroCopy:"نرافق الطلبة والخريجين الجزائريين في التحضير للدراسة والتكوين المهني في ألمانيا، من تنظيم الملف والبحث عن الخيارات المناسبة إلى الاستعداد للسفر والاستقرار.",
+        heroCta:"ناقش مشروعك معنا ↗",heroSecondary:"دورة اللغة أونلاين",trustLine:"مرافقة منظمة، تواصل واضح، وخطوات تناسب وضعك.",
+        cardKicker:"من الجزائر إلى ألمانيا",cardTitle:"طموحك يستحق مساراً مدروساً.",cardCopy:"دورة الألمانية أونلاين من الصفر، ثم الدراسة، اللغة، التكوين المهني والسكن — نساعدك على فهم الخيارات وتنظيم الخطوات التالية.",
+        route1:"تحديد الهدف",route2:"تحضير الملف",route3:"الخطوة التالية",
+        cardLink:"🎓 دورة اللغة أونلاين — التسجيل مفتوح",
+        ocBadge:"دورة أونلاين · التسجيل مفتوح",
+        ocTitle:"تعلّم الألمانية <em>أونلاين</em> من الجزائر — وابدأ من الصفر.",
+        ocLead:"دورة ألمانية أونلاين موجهة للجزائريين، مع متابعة مباشرة من فريق AGAPC. لا تحتاج إلى أي معرفة مسبقة باللغة — نبدأ معك من المستوى صفر خطوة بخطوة.",
+        ocPerk1:"تبدأ من الصفر",
+        ocPerk2:"100% أونلاين",
+        ocPerk3:"متابعة مباشرة",
+        ocPerk4:"مقاعد محدودة",
+        ocCta:"احجز مقعدك عبر واتساب",
+        ocSecondary:"شاهد الباقات",
+        ocNote:"لضمان مقعدك، يرجى إرسال رسالة عبر واتساب.",
+        ocZeroTitle:"نبدأ معك من الصفر",
+        ocZeroText:"لا تحتاج إلى أي معرفة مسبقة باللغة الألمانية قبل أن تبدأ معنا. نرافقك من الحرف الأول حتى أول محادثة.",
+        ocZero1:"لا شروط لغة مسبقة",
+        ocZero2:"مناسب للمبتدئين تماماً",
+        ocZero3:"تقدّم خطوة بخطوة مع المتابعة",
+        aud1T:"طلبة جامعيون",aud1D:"تخطّط لمتابعة الدراسة أو إكمالها في ألمانيا.",
+        aud2T:"خريجون جدد",aud2D:"تبحث عن تكوين مهني (Ausbildung) أو مسار عملي.",
+        aud3T:"مستكشفو الفرص",aud3D:"في مرحلة الاستفسار ويحتاجون صورة أوضح قبل القرار.",
+        servicesEyebrow:"خدماتنا",servicesTitle:"دعم عملي في كل مرحلة من رحلتك.",
+        servicesIntro:"خدمات مرنة للطلبة، الخريجين الجدد، وكل من يستكشف فرصة تعليمية أو مهنية في ألمانيا.",
+        s1Title:"التحضير لملف التأشيرة",s1Text:"مساعدة في فهم المتطلبات، ترتيب الوثائق، وإعداد قائمة بالخطوات اللازمة حسب نوع الطلب.",
+        s2Title:"البحث عن السكن",s2Text:"إرشاد حول خيارات الإقامة، منصات البحث، التواصل مع الجهات المعنية، والاستعداد قبل الوصول.",
+        s3Title:"مدارس اللغة والعقود",s3Text:"مساعدة في استكشاف مدارس اللغة، مقارنة الخيارات، وفهم تفاصيل التسجيل والعقد.",
+        s4Title:"البحث عن Ausbildung",s4Text:"دعم في البحث عن فرص التكوين المهني، تجهيز السيرة الذاتية، وتحسين رسائل التقديم.",
+        s5Title:"الدراسة والقبول",s5Text:"استكشاف المسارات الأكاديمية، تنظيم الوثائق، وفهم متطلبات التقديم للمؤسسات التعليمية.",
+        s6Title:"التحضير قبل السفر",s6Text:"إرشادات عملية حول التخطيط، الميزانية، المواعيد، وأولوياتك في الأسابيع الأولى.",
+        processEyebrow:"خطوات بسيطة وواضحة",processTitle:"من أول رسالة إلى خطة عمل.",processIntro:"نبدأ بفهم وضعك، ثم نحدد ما تحتاجه فعلاً وما هي الخطوات الواقعية التالية.",
+        step1Title:"أخبرنا عن هدفك",step1Text:"الدراسة، Ausbildung، اللغة أو السكن — شاركنا وضعك الحالي.",step2Title:"أرسل الاستمارة",step2Text:"املأ ملف المعلومات الذي سنوفره لك، ثم أرسله عبر واتساب.",
+        step3Title:"حدد الباقة المناسبة",step3Text:"نتواصل معك لتوضيح نطاق الخدمة والتكلفة والخطوات المتاحة.",step4Title:"ابدأ التحضير",step4Text:"تابع المهام والوثائق المطلوبة وفق خطتك الفردية.",
+        tlEyebrow:"إطار زمني إرشادي",tl1W:"الأسبوع 1",tl1T:"التشخيص الأولي",tl1D:"محادثة لفهم هدفك ووضعك الحالي، وتحديد نوع الخدمة المناسب.",
+        tl2W:"الأسبوع 2–4",tl2T:"تنظيم الملف",tl2D:"ترتيب الوثائق الأساسية، وصياغة السيرة الذاتية أو رسالة الدافع عند الحاجة.",
+        tl3W:"الأسبوع 4–8",tl3T:"البحث والتقديم",tl3D:"استكشاف الخيارات (جامعات، مدارس لغة، Ausbildung) وتجهيز طلبات التقديم.",
+        tl4W:"بعد ذلك",tl4T:"المتابعة والتحضير",tl4D:"متابعة الردود، التحضير للمقابلات، والتخطيط العملي قبل السفر.",
+        tlNote:"الإطار الزمني إرشادي ويتغير حسب نوع المسار، جاهزية ملفك، وتوفر الفرص.",
+        aboutEyebrow:"من نحن",aboutTitle:"شراكة أكاديمية ألمانية قريبة منك.",
+        aboutText:"AGAPC هي مبادرة استشارية أكاديمية ألمانية، تعمل كفرع محلي ضمن SILA Academy في الجزائر. نرافق الطلبة والخريجين في التحضير لمساراتهم الدراسية والمهنية في ألمانيا، بمقاربة عملية تقوم على فهم وضع كل شخص قبل اقتراح الخطوات.",
+        about1:"مرافقة فردية: كل ملف يُدرس حسب هدفه وظروفه.",
+        about2:"تواصل مباشر بالعربية والفرنسية والإنجليزية.",
+        about3:"إرشاد شفاف: نوضح ما نقدمه وما لا نقدمه قبل أي التزام.",
+        aboutNote:"نقطة التواصل: <strong>السيد زردازي.ا</strong> — يمكنك مراسلته مباشرة عبر واتساب لمعرفة ما إذا كانت خدماتنا مناسبة لحالتك.",
+        packagesEyebrow:"باقات خدماتنا",
+        packagesTitle:"ثلاث باقات لدورة اللغة الألمانية والتأشيرة.",
+        packagesIntro:"جميع الباقات مخصصة لمسار دورة اللغة الألمانية. اختر ما يناسب وضعك، ويمكنك دائماً طلب استشارة إن لم تكن متأكداً.",
+        p1Tag:"الباقة 01",
+        p1Title:"دورة اللغة + المساعدة في التأشيرة",
+        p1Desc:"لمن يريد إتمام التسجيل في دورة لغة والتحضير لملف التأشيرة.",
+        p1a:"البحث عن دورة لغة ألمانية مناسبة",
+        p1b:"التقديم والحصول على قبول دورة اللغة",
+        p1c:"الإرشاد والمساعدة في ملف طلب التأشيرة",
+        p1d:"قائمة الوثائق والإرشاد في تجهيز الملف",
+        p1x:"غير مشمول: البحث عن السكن أو Ausbildung.",
+        p1Cta:"أختار الباقة 1 ↗",
+        p2Tag:"الباقة 02",
+        p2Title:"دورة اللغة + السكن + التأشيرة",
+        p2Desc:"لمن يريد دعماً كاملاً يشمل إيجاد سكن في ألمانيا.",
+        p2a:"كل ما في الباقة 1",
+        p2b:"البحث عن سكن مناسب في ألمانيا",
+        p2c:"متابعة ملف السكن مع الجهات المعنية",
+        p2x:"غير مشمول: البحث عن Ausbildung.",
+        p2Cta:"أختار الباقة 2 ↗",
+        p3Tag:"الباقة 03",
+        p3Title:"دورة اللغة + السكن + Ausbildung + التأشيرة",
+        p3Desc:"لمن يريد مساراً شاملاً يجمع اللغة والسكن والبحث عن تكوين مهني.",
+        p3a:"كل ما في الباقة 2",
+        p3b:"البحث عن فرص Ausbildung",
+        p3c:"الإرشاد والمساعدة في التقديم على Ausbildung",
+        p3Cta:"أختار الباقة 3 ↗",
+        priceLabel:"رسوم الخدمة",
+        pkgAdviceText:"لست متأكداً من الباقة المناسبة؟",
+        pkgAdviceCta:"اطلب استشارة ↗",
+        discTitle:"مهم | رسوم خدماتنا لا تشمل التكاليف الرسمية أو تكاليف جهات خارجية.",
+        discIntro:"قد تشمل هذه التكاليف، على سبيل المثال لا الحصر:",
+        disc1:"رسوم دورة اللغة",
+        disc2:"تكاليف السكن والإيداع",
+        disc3:"رسوم التأشيرة والسفارة",
+        disc4:"التأمين الصحي/تأمين السفر",
+        disc5:"الحساب المغلق أو إثبات القدرة المالية",
+        disc6:"الترجمات المعتمدة",
+        disc7:"تذاكر السفر",
+        disc8:"أي رسوم رسمية أو إدارية أخرى",
+        discNote:"المساعدة في التأشيرة تعني الإرشاد وتجهيز الملف، أما قرار منح التأشيرة فهو من اختصاص السلطات الألمانية المختصة حصراً.",
+        docEyebrow:"ابدأ من هنا",docTitle:"جهّز معلوماتك قبل التواصل معنا.",
+        docText:"لجعل أول محادثة مفيدة، جهّز ملخصاً بسيطاً عن وضعك. لا حاجة لكل الوثائق الآن — فقط صورة أولية تساعدنا على توجيهك.",
+        doc1:"هدفك الأساسي: دراسة، Ausbildung، لغة، أو سكن.",
+        doc2:"مستواك الحالي في اللغة الألمانية أو الإنجليزية.",
+        doc3:"آخر شهادة دراسية أو خبرة مهنية ذات صلة.",
+        docCardTitle:"قائمة أولية لما يُطلب عادة",
+        docCardText:"هذه قائمة إرشادية عامة. المتطلبات الفعلية تختلف حسب نوع الطلب والجهة.",
+        chip1:"جواز سفر ساري",chip2:"شهادات دراسية",chip3:"كشف نقاط",chip4:"سيرة ذاتية",chip5:"شهادة لغة (إن وُجدت)",chip6:"إثبات مالي (حسب الحالة)",
+        docCta:"ابدأ المحادثة عبر واتساب ↗",
+        docNotice:"لن نطلب منك أي وثيقة حساسة قبل توضيح نطاق الخدمة والموافقة عليه.",
+        faqEyebrow:"قبل أن تبدأ",faqTitle:"أسئلة شائعة.",faqIntro:"هل لديك حالة خاصة؟ أرسل لنا رسالة وسنوضح لك ما يمكننا تقديمه.",
+        faq0Q:"ما هي دورة اللغة الألمانية أونلاين؟",
+        faq0A:"دورة ألمانية أونلاين موجهة للجزائريين، مع متابعة مباشرة من فريق AGAPC. تبدأ من المستوى صفر ولا تشترط أي معرفة مسبقة باللغة. لضمان مقعدك، أرسل لنا رسالة عبر واتساب.",
+        faq0bQ:"هل أحتاج معرفة مسبقة بالألمانية؟",
+        faq0bA:"لا. نبدأ معك من الصفر تماماً — لا تحتاج إلى أي معرفة سابقة باللغة الألمانية قبل أن تبدأ معنا.",
+        faq1Q:"هل تضمنون الحصول على التأشيرة أو القبول؟",faq1A:"لا. القرار النهائي يعود إلى الجهات الرسمية والمؤسسات المعنية. نقدم إرشاداً ومساعدة تنظيمية، ولا نضمن التأشيرة أو القبول أو الحصول على عقد.",
+        faq2Q:"هل يمكنكم إيجاد سكن أو عقد Ausbildung بشكل مضمون؟",faq2A:"نساعد في البحث والتحضير والتواصل وفق نطاق الخدمة، لكن توفر السكن أو فرص التكوين يعتمد على الجهات الخارجية وشروط كل حالة.",
+        faq3Q:"كيف أعرف الأسعار وما تتضمنه كل باقة؟",faq3A:"الأسعار مذكورة أعلاه لكل باقة. إذا لم تكن متأكداً من الباقة المناسبة، راسلنا وسنوجهك.",
+        faq4Q:"هل يجب أن أتحدث الألمانية مسبقاً؟",faq4A:"لا. يمكنك البدء من الصفر معنا في دورة اللغة الأونلاين. أما بالنسبة للدراسة أو Ausbildung، فإن متطلبات اللغة تختلف حسب المسار والمؤسسة، ويمكننا مساعدتك على فهمها.",
+        faq5Q:"هل تقدمون خدمات لغير الجزائريين؟",faq5A:"تركيزنا الأساسي على الطلبة والخريجين الجزائريين. إذا كنت من بلد آخر، راسلنا وسنوضح إن كان بإمكاننا المساعدة أو توجيهك.",
+        faq6Q:"كيف تتم عملية الدفع؟",faq6A:"تُوضح طريقة الدفع وتفاصيلها عند تأكيد الباقة ونطاق الخدمة. لا نطلب أي دفعة قبل الاتفاق الواضح على ما سيُقدَّم.",
+        contactEyebrow:"لنخطط لخطوتك التالية",contactTitle:"كل رحلة تبدأ بمحادثة واضحة.",
+        contactText:"تواصل مع السيد زردازي.ا لمعرفة الخدمات المتاحة، تفاصيل الباقات، والأسعار. وإذا أردت حجز مقعدك في دورة اللغة الأونلاين، أرسل لنا رسالة الآن.",
+        footerName:"Algerian German Language & Academic Partnership Consultancy",footerAffiliation:"فرع محلي ضمن SILA Academy · الجزائر",floatCta:"احجز مقعدك عبر واتساب"
+      },
+      fr: {
+        ribbonText:"🎓 Inscriptions ouvertes au cours d’allemand en ligne — nous partons de zéro.",
+        ribbonCta:"Réservez votre place →",
+        topline:"Votre accompagnement vers les études et la formation en Allemagne",brandSub:"Partenariat académique allemand · antenne SILA Academy",
+        navOnline:"Cours en ligne",navServices:"Services",navProcess:"Notre méthode",navAbout:"À propos",navPackages:"Formules",navApply:"Commencer",navCta:"Nous contacter",
+        heroEyebrow:"Conseil académique et accompagnement pratique",heroTitle:"Votre prochaine étape vers l’<em>Allemagne</em> commence par un plan clair.",
+        heroCopy:"Nous accompagnons les étudiants et jeunes diplômés algériens dans la préparation de leur projet d’études ou de formation professionnelle en Allemagne : dossier, recherche d’options et préparation au départ.",
+        heroCta:"Parlons de votre projet ↗",heroSecondary:"Cours en ligne",trustLine:"Un accompagnement structuré, des échanges clairs et des étapes adaptées à votre situation.",
+        cardKicker:"De l’Algérie vers l’Allemagne",cardTitle:"Votre ambition mérite un parcours réfléchi.",cardCopy:"Cours d’allemand en ligne depuis zéro, puis études, langue, Ausbildung et logement — nous vous aidons à comprendre les options et à organiser les prochaines étapes.",
+        route1:"Définir l’objectif",route2:"Préparer le dossier",route3:"Prochaine étape",
+        cardLink:"🎓 Cours d’allemand en ligne — inscriptions ouvertes",
+        ocBadge:"Cours en ligne · Inscriptions ouvertes",
+        ocTitle:"Apprenez l’allemand <em>en ligne</em> depuis l’Algérie — en partant de zéro.",
+        ocLead:"Un cours d’allemand en ligne destiné aux Algériens, avec un suivi direct de l’équipe AGAPC. Aucune connaissance préalable n’est requise — nous commençons avec vous depuis le niveau zéro, étape par étape.",
+        ocPerk1:"Départ de zéro",
+        ocPerk2:"100 % en ligne",
+        ocPerk3:"Suivi direct",
+        ocPerk4:"Places limitées",
+        ocCta:"Réservez votre place sur WhatsApp",
+        ocSecondary:"Voir les formules",
+        ocNote:"Pour garantir votre place, merci de nous écrire sur WhatsApp.",
+        ocZeroTitle:"Nous commençons avec vous depuis zéro",
+        ocZeroText:"Aucune connaissance préalable de l’allemand n’est nécessaire pour commencer. Nous vous accompagnons de la première lettre jusqu’à votre première conversation.",
+        ocZero1:"Aucun prérequis linguistique",
+        ocZero2:"Adapté aux grands débutants",
+        ocZero3:"Progression étape par étape avec suivi",
+        aud1T:"Étudiants",aud1D:"Vous envisagez des études en Allemagne.",
+        aud2T:"Jeunes diplômés",aud2D:"Vous cherchez un Ausbildung ou un parcours professionnel.",
+        aud3T:"En exploration",aud3D:"Vous vous informez avant de décider.",
+        servicesEyebrow:"Nos services",servicesTitle:"Un soutien pratique à chaque étape.",
+        servicesIntro:"Des services flexibles pour les étudiants, jeunes diplômés et personnes qui explorent une opportunité en Allemagne.",
+        s1Title:"Préparation du dossier de visa",s1Text:"Comprendre les exigences, organiser les documents et établir une liste d’étapes selon votre demande.",
+        s2Title:"Recherche de logement",s2Text:"Conseils sur les options de logement, les plateformes de recherche, les contacts et la préparation avant l’arrivée.",
+        s3Title:"Écoles de langue et contrats",s3Text:"Explorer les écoles de langue, comparer les options et comprendre les modalités d’inscription et les contrats.",
+        s4Title:"Recherche d’Ausbildung",s4Text:"Recherche de formations professionnelles, préparation du CV et amélioration des candidatures.",
+        s5Title:"Études et admission",s5Text:"Explorer les parcours académiques, organiser les documents et comprendre les conditions de candidature.",
+        s6Title:"Préparation au départ",s6Text:"Conseils pratiques sur la planification, le budget, les rendez-vous et les priorités des premières semaines.",
+        processEyebrow:"Des étapes simples et claires",processTitle:"Du premier message à un plan d’action.",processIntro:"Nous commençons par comprendre votre situation, puis définissons les prochaines étapes réalistes.",
+        step1Title:"Présentez votre objectif",step1Text:"Études, Ausbildung, langue ou logement : expliquez-nous votre situation.",step2Title:"Envoyez le formulaire",step2Text:"Remplissez le formulaire d’information fourni, puis envoyez-le sur WhatsApp.",
+        step3Title:"Choisissez une formule",step3Text:"Nous clarifions le périmètre du service, le coût et les étapes possibles.",step4Title:"Commencez la préparation",step4Text:"Avancez selon les tâches et documents prévus dans votre plan.",
+        tlEyebrow:"Calendrier indicatif",tl1W:"Semaine 1",tl1T:"Diagnostic initial",tl1D:"Un échange pour comprendre votre objectif et votre situation.",
+        tl2W:"Semaines 2–4",tl2T:"Organisation du dossier",tl2D:"Classement des documents, préparation du CV ou de la lettre de motivation si nécessaire.",
+        tl3W:"Semaines 4–8",tl3T:"Recherche et candidatures",tl3D:"Exploration des options (universités, écoles de langue, Ausbildung) et préparation des candidatures.",
+        tl4W:"Ensuite",tl4T:"Suivi et préparation",tl4D:"Suivi des réponses, préparation aux entretiens et planification pratique avant le départ.",
+        tlNote:"Ce calendrier est indicatif et varie selon le parcours, l’état de votre dossier et la disponibilité des opportunités.",
+        aboutEyebrow:"À propos",aboutTitle:"Un partenariat académique allemand, proche de vous.",
+        aboutText:"AGAPC est une initiative de conseil académique allemande, opérant comme antenne locale de SILA Academy en Algérie. Nous accompagnons étudiants et diplômés dans la préparation de leurs parcours d’études et professionnels en Allemagne, avec une approche pratique centrée sur la situation de chaque personne.",
+        about1:"Accompagnement individuel : chaque dossier est étudié selon son objectif et son contexte.",
+        about2:"Communication directe en arabe, français et anglais.",
+        about3:"Conseil transparent : nous précisons ce que nous faisons et ce que nous ne faisons pas avant tout engagement.",
+        aboutNote:"Point de contact : <strong>M. Zerdazi A.</strong> — contactez-le directement sur WhatsApp pour savoir si nos services correspondent à votre situation.",
+        packagesEyebrow:"Nos formules",
+        packagesTitle:"Trois formules pour le cours d’allemand et le visa.",
+        packagesIntro:"Toutes les formules concernent le parcours « cours d’allemand ». Choisissez celle qui correspond à votre situation, ou demandez un conseil.",
+        p1Tag:"Formule 01",
+        p1Title:"Cours d’allemand + assistance visa",
+        p1Desc:"Pour finaliser l’inscription à un cours d’allemand et préparer le dossier de visa.",
+        p1a:"Recherche d’un cours d’allemand adapté",
+        p1b:"Candidature et obtention de l’admission au cours",
+        p1c:"Conseil et aide pour le dossier de visa",
+        p1d:"Liste des documents et aide à la préparation",
+        p1x:"Non inclus : recherche de logement ou d’Ausbildung.",
+        p1Cta:"Je choisis la formule 1 ↗",
+        p2Tag:"Formule 02",
+        p2Title:"Cours d’allemand + logement + visa",
+        p2Desc:"Pour un accompagnement complet incluant la recherche de logement en Allemagne.",
+        p2a:"Tout ce qui est inclus dans la formule 1",
+        p2b:"Recherche d’un logement adapté en Allemagne",
+        p2c:"Suivi du dossier logement avec les interlocuteurs concernés",
+        p2x:"Non inclus : recherche d’Ausbildung.",
+        p2Cta:"Je choisis la formule 2 ↗",
+        p3Tag:"Formule 03",
+        p3Title:"Cours d’allemand + logement + Ausbildung + visa",
+        p3Desc:"Pour un parcours complet combinant langue, logement et recherche de formation.",
+        p3a:"Tout ce qui est inclus dans la formule 2",
+        p3b:"Recherche d’opportunités d’Ausbildung",
+        p3c:"Conseil et aide pour les candidatures Ausbildung",
+        p3Cta:"Je choisis la formule 3 ↗",
+        priceLabel:"Frais de service",
+        pkgAdviceText:"Vous hésitez entre les formules ?",
+        pkgAdviceCta:"Demander un conseil ↗",
+        discTitle:"Important | Nos frais de service n’incluent pas les frais officiels ni ceux de tiers.",
+        discIntro:"Ces frais peuvent inclure, sans s’y limiter :",
+        disc1:"Frais du cours d’allemand",
+        disc2:"Logement et caution",
+        disc3:"Frais de visa et d’ambassade",
+        disc4:"Assurance santé / voyage",
+        disc5:"Compte bloqué ou preuve de ressources",
+        disc6:"Traductions certifiées",
+        disc7:"Billets d’avion",
+        disc8:"Autres frais officiels ou administratifs",
+        discNote:"L’assistance visa signifie conseil et préparation du dossier. La décision d’octroi appartient exclusivement aux autorités allemandes compétentes.",
+        docEyebrow:"Commencez ici",docTitle:"Préparez vos informations avant de nous contacter.",
+        docText:"Pour rendre le premier échange utile, préparez un résumé simple de votre situation. Pas besoin de tous les documents maintenant — juste une première image.",
+        doc1:"Votre objectif principal : études, Ausbildung, langue ou logement.",
+        doc2:"Votre niveau actuel en allemand ou en anglais.",
+        doc3:"Votre dernier diplôme ou expérience professionnelle pertinente.",
+        docCardTitle:"Liste indicative des documents souvent demandés",
+        docCardText:"Liste générale indicative. Les exigences réelles varient selon le type de demande et l’institution.",
+        chip1:"Passeport valide",chip2:"Diplômes",chip3:"Relevés de notes",chip4:"CV",chip5:"Certificat de langue (si disponible)",chip6:"Justificatif financier (selon le cas)",
+        docCta:"Démarrer la conversation sur WhatsApp ↗",
+        docNotice:"Nous ne demanderons aucun document sensible avant d’avoir clarifié et accepté le périmètre du service.",
+        faqEyebrow:"Avant de commencer",faqTitle:"Questions fréquentes.",faqIntro:"Votre situation est particulière ? Écrivez-nous pour savoir quel accompagnement est possible.",
+        faq0Q:"Qu’est-ce que le cours d’allemand en ligne ?",
+        faq0A:"Un cours d’allemand en ligne destiné aux Algériens, avec un suivi direct de l’équipe AGAPC. Il commence au niveau zéro et ne requiert aucune connaissance préalable. Pour garantir votre place, écrivez-nous sur WhatsApp.",
+        faq0bQ:"Ai-je besoin de connaissances préalables en allemand ?",
+        faq0bA:"Non. Nous commençons avec vous depuis zéro — aucune connaissance préalable de l’allemand n’est nécessaire.",
+        faq1Q:"Garantissez-vous l’obtention du visa ou de l’admission ?",faq1A:"Non. La décision finale appartient aux autorités et établissements concernés. Nous proposons un accompagnement informatif et organisationnel, sans garantie de visa, d’admission ou de contrat.",
+        faq2Q:"Pouvez-vous garantir un logement ou un contrat d’Ausbildung ?",faq2A:"Nous pouvons aider dans la recherche, la préparation et la prise de contact selon le service convenu. La disponibilité dépend de tiers et des conditions de chaque dossier.",
+        faq3Q:"Comment connaître les tarifs et le contenu des formules ?",faq3A:"Les tarifs sont indiqués ci-dessus pour chaque formule. Si vous hésitez, écrivez-nous et nous vous orienterons.",
+        faq4Q:"Dois-je déjà parler allemand ?",faq4A:"Non. Vous pouvez commencer depuis zéro avec notre cours d’allemand en ligne. Pour les études ou l’Ausbildung, les exigences linguistiques varient selon le parcours et l’établissement — nous pouvons vous aider à les comprendre.",
+        faq5Q:"Proposez-vous vos services à des non-Algériens ?",faq5A:"Notre focus principal est sur les étudiants et diplômés algériens. Si vous venez d’un autre pays, écrivez-nous et nous vous indiquerons si nous pouvons aider ou orienter.",
+        faq6Q:"Comment se déroule le paiement ?",faq6A:"Les modalités de paiement sont précisées lors de la confirmation de la formule et du périmètre. Aucun paiement n’est demandé avant un accord clair sur ce qui sera fourni.",
+        contactEyebrow:"Préparons votre prochaine étape",contactTitle:"Chaque parcours commence par un échange clair.",
+        contactText:"Contactez M. Zerdazi A. pour connaître les services disponibles, les formules et les tarifs. Pour réserver votre place au cours d’allemand en ligne, écrivez-nous dès maintenant.",
+        footerName:"Algerian German Language & Academic Partnership Consultancy",footerAffiliation:"Antenne locale de SILA Academy · Algérie",floatCta:"Réservez votre place sur WhatsApp"
+      },
+      en: {
+        ribbonText:"🎓 Enrolment is now open for the online German course — we start from zero.",
+        ribbonCta:"Secure your spot →",
+        topline:"Your guide to study and vocational training opportunities in Germany",brandSub:"German academic partnership · SILA Academy local branch",
+        navOnline:"Online course",navServices:"Services",navProcess:"How it works",navAbout:"About",navPackages:"Packages",navApply:"Get started",navCta:"Contact us",
+        heroEyebrow:"Academic guidance and practical support",heroTitle:"Your next step towards <em>Germany</em> starts with a clear plan.",
+        heroCopy:"We support Algerian students and recent graduates as they prepare for study or vocational training in Germany — from organising their documents and exploring options to preparing for departure and settling in.",
+        heroCta:"Discuss your plans ↗",heroSecondary:"Online course",trustLine:"Structured guidance, clear communication, and steps tailored to your situation.",
+        cardKicker:"From Algeria to Germany",cardTitle:"Your ambition deserves a considered pathway.",cardCopy:"Online German course from zero, then study, language, Ausbildung and accommodation — we help you understand your options and organise the next steps.",
+        route1:"Define your goal",route2:"Prepare your file",route3:"Next steps",
+        cardLink:"🎓 Online German course — enrolment open",
+        ocBadge:"Online course · Enrolment open",
+        ocTitle:"Learn German <em>online</em> from Algeria — starting from zero.",
+        ocLead:"An online German course for Algerians, with direct follow-up from the AGAPC team. No prior knowledge of the language is required — we start with you from level zero, step by step.",
+        ocPerk1:"Start from zero",
+        ocPerk2:"100% online",
+        ocPerk3:"Direct follow-up",
+        ocPerk4:"Limited seats",
+        ocCta:"Secure your spot on WhatsApp",
+        ocSecondary:"See packages",
+        ocNote:"To secure your spot, please send us a message on WhatsApp.",
+        ocZeroTitle:"We start with you from zero",
+        ocZeroText:"You don’t need any prior knowledge of German before you start with us. We guide you from the first letter to your first conversation.",
+        ocZero1:"No prior language requirement",
+        ocZero2:"Perfect for complete beginners",
+        ocZero3:"Step-by-step progress with follow-up",
+        aud1T:"University students",aud1D:"Planning to study or continue studies in Germany.",
+        aud2T:"Recent graduates",aud2D:"Looking for vocational training (Ausbildung) or a practical path.",
+        aud3T:"Exploring options",aud3D:"Gathering information before deciding.",
+        servicesEyebrow:"Our services",servicesTitle:"Practical support at every stage.",
+        servicesIntro:"Flexible services for students, recent graduates, and anyone exploring an educational or professional opportunity in Germany.",
+        s1Title:"Visa application preparation",s1Text:"Understand requirements, organise documents, and create a checklist based on your application type.",
+        s2Title:"Accommodation search",s2Text:"Guidance on accommodation options, search platforms, contacting relevant parties, and preparing before arrival.",
+        s3Title:"Language schools and contracts",s3Text:"Explore language schools, compare options, and understand registration terms and contracts.",
+        s4Title:"Ausbildung search",s4Text:"Support with vocational training searches, CV preparation, and improving application letters.",
+        s5Title:"Study and admission",s5Text:"Explore academic pathways, organise documents, and understand institutional application requirements.",
+        s6Title:"Pre-departure preparation",s6Text:"Practical guidance on planning, budgeting, appointments, and first-week priorities.",
+        processEyebrow:"Simple, clear steps",processTitle:"From your first message to an action plan.",processIntro:"We start by understanding your situation, then identify realistic next steps.",
+        step1Title:"Tell us your goal",step1Text:"Study, Ausbildung, language or accommodation — tell us where you are now.",step2Title:"Send the form",step2Text:"Complete the information form we provide and send it through WhatsApp.",
+        step3Title:"Choose your package",step3Text:"We clarify the service scope, cost, and available next steps.",step4Title:"Start preparing",step4Text:"Work through the tasks and documents in your individual plan.",
+        tlEyebrow:"Indicative timeline",tl1W:"Week 1",tl1T:"Initial assessment",tl1D:"A conversation to understand your goal and current situation.",
+        tl2W:"Weeks 2–4",tl2T:"Organising your file",tl2D:"Ordering key documents and drafting a CV or motivation letter where needed.",
+        tl3W:"Weeks 4–8",tl3T:"Search and applications",tl3D:"Exploring options (universities, language schools, Ausbildung) and preparing applications.",
+        tl4W:"After that",tl4T:"Follow-up and preparation",tl4D:"Tracking responses, preparing for interviews, and practical planning before departure.",
+        tlNote:"This timeline is indicative and varies depending on the pathway, your file readiness, and the availability of opportunities.",
+        aboutEyebrow:"About",aboutTitle:"A German academic partnership, close to you.",
+        aboutText:"AGAPC is a German academic consultancy initiative operating as a local branch of SILA Academy in Algeria. We support students and graduates in preparing their academic and professional pathways in Germany, with a practical approach centred on understanding each person’s situation.",
+        about1:"Individual guidance: every file is reviewed based on its goal and context.",
+        about2:"Direct communication in Arabic, French, and English.",
+        about3:"Transparent advice: we clarify what we do and do not offer before any commitment.",
+        aboutNote:"Point of contact: <strong>Mr. Zerdazi A.</strong> — message him directly on WhatsApp to find out whether our services fit your situation.",
+        packagesEyebrow:"Our packages",
+        packagesTitle:"Three packages for the German language course and visa.",
+        packagesIntro:"All packages are for the language-course pathway. Choose the one that fits your situation, or ask for advice if unsure.",
+        p1Tag:"Package 01",
+        p1Title:"Language course + visa assistance",
+        p1Desc:"For finalising a language course enrolment and preparing the visa file.",
+        p1a:"Finding a suitable German language course",
+        p1b:"Applying for and obtaining course admission",
+        p1c:"Visa application guidance and support",
+        p1d:"Document checklist and preparation guidance",
+        p1x:"Not included: accommodation or Ausbildung search.",
+        p1Cta:"I choose Package 1 ↗",
+        p2Tag:"Package 02",
+        p2Title:"Language course + accommodation + visa",
+        p2Desc:"For full support including finding accommodation in Germany.",
+        p2a:"Everything in Package 1",
+        p2b:"Finding suitable accommodation in Germany",
+        p2c:"Following up the accommodation file with relevant parties",
+        p2x:"Not included: Ausbildung search.",
+        p2Cta:"I choose Package 2 ↗",
+        p3Tag:"Package 03",
+        p3Title:"Language course + accommodation + Ausbildung + visa",
+        p3Desc:"For a complete pathway combining language, accommodation and vocational training search.",
+        p3a:"Everything in Package 2",
+        p3b:"Ausbildung opportunity search",
+        p3c:"Guidance with Ausbildung applications",
+        p3Cta:"I choose Package 3 ↗",
+        priceLabel:"Service fee",
+        pkgAdviceText:"Not sure which package fits?",
+        pkgAdviceCta:"Ask for advice ↗",
+        discTitle:"Important | Our service fees do not include official or third-party costs.",
+        discIntro:"These may include, but are not limited to:",
+        disc1:"Language course fees",
+        disc2:"Accommodation and deposit",
+        disc3:"Visa and embassy fees",
+        disc4:"Health / travel insurance",
+        disc5:"Blocked account or proof of funds",
+        disc6:"Certified translations",
+        disc7:"Flight tickets",
+        disc8:"Other official or administrative fees",
+        discNote:"Visa assistance means preparation and guidance. The decision to grant a visa rests exclusively with the competent German authorities.",
+        docEyebrow:"Start here",docTitle:"Prepare your information before contacting us.",
+        docText:"To make the first conversation useful, prepare a short summary of your situation. You do not need every document now — just an initial picture.",
+        doc1:"Your main goal: study, Ausbildung, language, or accommodation.",
+        doc2:"Your current German or English level.",
+        doc3:"Your latest diploma or relevant professional experience.",
+        docCardTitle:"Indicative list of commonly requested documents",
+        docCardText:"A general indicative list. Actual requirements vary by application type and institution.",
+        chip1:"Valid passport",chip2:"Diplomas",chip3:"Transcripts",chip4:"CV",chip5:"Language certificate (if any)",chip6:"Proof of funds (case-dependent)",
+        docCta:"Start the conversation on WhatsApp ↗",
+        docNotice:"We will not ask for any sensitive document before clarifying and agreeing on the service scope.",
+        faqEyebrow:"Before you begin",faqTitle:"Frequently asked questions.",faqIntro:"Have a specific situation? Message us to discuss the support that may be available.",
+        faq0Q:"What is the online German course?",
+        faq0A:"An online German course for Algerians, with direct follow-up from the AGAPC team. It starts at level zero and requires no prior knowledge of the language. To secure your spot, send us a message on WhatsApp.",
+        faq0bQ:"Do I need prior knowledge of German?",
+        faq0bA:"No. We start with you from zero — no prior knowledge of German is required before you begin with us.",
+        faq1Q:"Do you guarantee a visa or admission?",faq1A:"No. Final decisions belong to the relevant authorities and institutions. We provide guidance and organisational support but cannot guarantee a visa, admission, or contract.",
+        faq2Q:"Can you guarantee accommodation or an Ausbildung contract?",faq2A:"We can assist with searching, preparation, and communication within the agreed service scope. Availability depends on third parties and each applicant’s circumstances.",
+        faq3Q:"How can I find out the prices and what each package includes?",faq3A:"Prices are listed above for each package. If you are unsure which fits, message us and we will guide you.",
+        faq4Q:"Do I need to speak German already?",faq4A:"No. You can start from zero with our online German course. For study or Ausbildung, language requirements vary by pathway and institution — we can help you understand them.",
+        faq5Q:"Do you offer services to non-Algerians?",faq5A:"Our primary focus is on Algerian students and graduates. If you are from another country, message us and we will let you know whether we can help or point you in the right direction.",
+        faq6Q:"How does payment work?",faq6A:"Payment methods and details are explained once the package and service scope are confirmed. We do not request any payment before a clear agreement on what will be provided.",
+        contactEyebrow:"Plan your next step",contactTitle:"Every journey starts with a clear conversation.",
+        contactText:"Contact Mr. Zerdazi A. for available services, package details, and prices. To secure your spot in the online German course, message us today.",
+        footerName:"Algerian German Language & Academic Partnership Consultancy",footerAffiliation:"SILA Academy local branch · Algeria",floatCta:"Secure your spot on WhatsApp"
+      }
+    };
+
+    const languageSelect = document.getElementById("language");
+    const titles = {
+      ar: "AGAPC | دورة الألمانية أونلاين والاستشارات الأكاديمية — SILA Academy",
+      fr: "AGAPC | Cours d’allemand en ligne & conseil académique — SILA Academy",
+      en: "AGAPC | Online German Course & Academic Consultancy — SILA Academy"
+    };
+
+    function setLanguage(lang){
+      const t = translations[lang] || translations.ar;
+      document.documentElement.lang = lang;
+      document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+      document.querySelectorAll("[data-i18n]").forEach(el=>{
+        const key = el.getAttribute("data-i18n");
+        if (t[key] !== undefined) el.innerHTML = t[key];
+      });
+      document.title = titles[lang] || titles.ar;
+      languageSelect.value = lang;
+      try { localStorage.setItem("agapc-lang", lang); } catch(e){}
+    }
+
+    (function(){
+      let saved = null;
+      try { saved = localStorage.getItem("agapc-lang"); } catch(e){}
+      const browser = (navigator.language || "ar").slice(0,2);
+      const initial = saved || (["ar","fr","en"].includes(browser) ? browser : "ar");
+      setLanguage(initial);
+    })();
+
+    languageSelect.addEventListener("change", e=>setLanguage(e.target.value));
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Ribbon close (persisted per session)
+    (function(){
+      const ribbon = document.getElementById("ribbon");
+      const closeBtn = document.getElementById("ribbonClose");
+      if (!ribbon || !closeBtn) return;
+      try {
+        if (sessionStorage.getItem("agapc-ribbon-dismissed") === "1") {
+          ribbon.style.display = "none";
+        }
+      } catch(e){}
+      closeBtn.addEventListener("click", ()=>{
+        ribbon.style.display = "none";
+        try { sessionStorage.setItem("agapc-ribbon-dismissed", "1"); } catch(e){}
+      });
+    })();
+
+    // Scroll-spy for nav active state
+    (function(){
+      const links = Array.from(document.querySelectorAll(".navlinks a"));
+      const sections = links
+        .map(a => document.querySelector(a.getAttribute("href")))
+        .filter(Boolean);
+      if (!("IntersectionObserver" in window) || sections.length === 0) return;
+      const map = new Map();
+      links.forEach(a => {
+        const sec = document.querySelector(a.getAttribute("href"));
+        if (sec) map.set(sec, a);
+      });
+      const obs = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          const link = map.get(entry.target);
+          if (!link) return;
+          if (entry.isIntersecting){
+            links.forEach(l => l.classList.remove("active"));
+            link.classList.add("active");
+          }
+        });
+      }, { rootMargin: "-45% 0px -50% 0px", threshold: 0 });
+      sections.forEach(s => obs.observe(s));
+    })();
+  </script>
+</body>
+</html>
